@@ -15,24 +15,209 @@ export const PROJECT_INFO = {
   parking: "3 Covered Car Parking Spaces bundled per residence with EV-Ready Charging",
   ceilingHeight: "11.5 ft Clear Height & 22+ ft Double-Height Living Spaces",
   facade: "High-Performance Acoustic DGU Low-E Glass with 270° Panoramic City & Hill Vistas",
-  officialLogo: "/assets/kundans/kundan-logo.svg",
-  officialHeroImage: "/assets/hero/kundan-arvaana-hero.webp",
-  masterPlanImage: "/assets/masterplan/master-site-plan.svg",
+  officialLogo: "./assets/kundans/kundan-logo.svg",
+  officialHeroImage: "./assets/hero/kundan-arvaana-hero.webp",
+  arvaanaRender: "./assets/kundanspaces/projects/arvaana1.webp",
+  masterPlanImage: "./assets/masterplan/master-site-plan.svg",
   mapEmbedUrl: "https://maps.google.com/maps?q=Arvaana%2C%20Balewadi%2C%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed",
 };
+
+export const KUNDAN_ORIGINAL_PROJECTS = [
+  {
+    name: "Kundan Arvaana",
+    location: "Balewadi, Pune West",
+    type: "4 & 4.5 BHK Grand Residences",
+    image: "./assets/hero/kundan-arvaana-hero.webp",
+    status: "Flagship Luxury Launch",
+    highlight: "India's 1st Ikigai-Inspired 33-Storey Landmark"
+  },
+  {
+    name: "Emirus",
+    location: "Baner, Pune",
+    type: "Ultra-Luxury High-Rise Residences",
+    image: "./assets/kundanspaces/projects/emirus.webp",
+    status: "Delivered Landmark",
+    highlight: "Iconic Baner Skyline Architecture"
+  },
+  {
+    name: "Presidia",
+    location: "Kondhwa, Pune",
+    type: "Signature Residential Enclave",
+    image: "./assets/kundanspaces/projects/presidia.webp",
+    status: "Delivered Landmark",
+    highlight: "Expansive Podium & Resort Amenities"
+  },
+  {
+    name: "Kundan Praangan",
+    location: "Bopodi, Pune",
+    type: "Grand Gated Community",
+    image: "./assets/kundanspaces/projects/kundan-praangan.webp",
+    status: "Completed & Handed Over",
+    highlight: "2 & 3 BHK Nature Living"
+  },
+  {
+    name: "Eternia",
+    location: "BT Kawade Road, Pune",
+    type: "High-End Luxury Homes",
+    image: "./assets/kundanspaces/projects/eternia.webp",
+    status: "Delivered Landmark",
+    highlight: "Premium Riverview Residences"
+  },
+  {
+    name: "La Ventana",
+    location: "NIBM Road, Pune",
+    type: "Bespoke Boutique Living",
+    image: "./assets/kundanspaces/projects/la-ventana.webp",
+    status: "Delivered Landmark",
+    highlight: "Spanish Architectural Styling"
+  },
+  {
+    name: "The Peak",
+    location: "NIBM Annex, Pune",
+    type: "Panoramic Hillside Residences",
+    image: "./assets/kundanspaces/projects/the-peak.webp",
+    status: "Delivered Landmark",
+    highlight: "Scenic Valley Horizons"
+  },
+  {
+    name: "Divine",
+    location: "Wakad, Pune",
+    type: "Contemporary Urban Residences",
+    image: "./assets/kundanspaces/projects/divine.webp",
+    status: "Completed",
+    highlight: "Strategic Hinjawadi IT Corridor"
+  }
+];
+
+export const KUNDAN_QUALITY_PILLARS = [
+  {
+    title: "Uncompromising Construction Quality",
+    desc: "Engineered with Mivan aluminum formwork, earthquake-resistant seismic Grade-4 structural frameworks, and high-tensile steel reinforcements.",
+    image: "./assets/kundanspaces/shared/quality-construction.webp"
+  },
+  {
+    title: "Bespoke Interior Craftsmanship",
+    desc: "Imported Italian Botticino marble, acoustic double-glazed curtain glass, German concealed plumbing fixtures, and automated Lutron lighting.",
+    image: "./assets/kundanspaces/shared/trust-interior.webp"
+  },
+  {
+    title: "Architectural Innovation & ESG",
+    desc: "Biophilic vertical green facades, rainwater harvesting, solar kinetic energy systems, and IGBC Gold rated green building certifications.",
+    image: "./assets/kundanspaces/shared/innovation-construction.webp"
+  }
+];
+
+export const KUNDAN_LEADERSHIP = [
+  {
+    name: "Mr. Bhawarlal K. Jain",
+    role: "Founder & Chairman",
+    image: "./assets/kundanspaces/general/bhawarlal-k-jain.webp",
+    desc: "A visionary pioneer who established Kundan Spaces in 1986 with a commitment to ethics, timeless craftsmanship, and client trust."
+  },
+  {
+    name: "Mr. Ashish Jain",
+    role: "Managing Director",
+    image: "./assets/kundanspaces/general/ashish-jain.webp",
+    desc: "Spearheading modern luxury, cutting-edge construction engineering, and design-forward landmarks across Pune."
+  },
+  {
+    name: "Mr. Dhanesh Mehta",
+    role: "Executive Director",
+    image: "./assets/kundanspaces/general/dhanesh-mehta.webp",
+    desc: "Championing operational excellence, strategic land acquisitions, and institutional partnerships."
+  },
+  {
+    name: "Mr. Rakshit Oswal",
+    role: "Director of Developments",
+    image: "./assets/kundanspaces/general/rakshit-oswal.webp",
+    desc: "Driving architectural innovation, ultra-luxury high-rise design, and customer experience."
+  }
+];
 
 export const GALLERY_ITEMS = [
   {
     id: "g1",
-    title: "Ikigai Architectural Elevation & Sakura Vista",
+    title: "Arvaana Ikigai Elevation & Sakura Vista",
     category: "Exterior Facade",
-    image: "/assets/hero/kundan-arvaana-hero.webp",
+    image: "./assets/hero/kundan-arvaana-hero.webp",
     desc: "Soaring 33-storey Ikigai luxury tower with bronze vertical fins and double-height glass framing, framed by cherry blossoms and Japanese floral landscape.",
     isOfficial: true,
     badgeText: "Ikigai Landmark Elevation"
   },
   {
     id: "g2",
+    title: "Arvaana Official Architectural Render",
+    category: "Exterior Facade",
+    image: "./assets/kundanspaces/projects/arvaana1.webp",
+    desc: "Official developer render from Kundanspaces showing the landmark tower scaling 33 levels with wrap-around balconies.",
+    isOfficial: true,
+    badgeText: "Official Developer Render"
+  },
+  {
+    id: "g3",
+    title: "Kundan Spaces Interior Craftsmanship",
+    category: "Living & Interiors",
+    image: "./assets/kundanspaces/shared/trust-interior.webp",
+    desc: "Original interior styling from Kundan Spaces showing grand double-height living, customized acoustic paneling, and Italian marble.",
+    isOfficial: true,
+    badgeText: "Kundan Interior Master"
+  },
+  {
+    id: "g4",
+    title: "Quality Construction & Engineering",
+    category: "Wellness & Club",
+    image: "./assets/kundanspaces/shared/quality-construction.webp",
+    desc: "Original Kundan Spaces structural engineering excellence meeting international seismic and architectural standards.",
+    isOfficial: true,
+    badgeText: "Kundan Engineering"
+  },
+  {
+    id: "g5",
+    title: "Emirus Landmark Tower",
+    category: "Exterior Facade",
+    image: "./assets/kundanspaces/projects/emirus.webp",
+    desc: "Kundan Spaces' prestigious Baner landmark high-rise reflecting luxury craftsmanship.",
+    isOfficial: true,
+    badgeText: "Delivered Landmark"
+  },
+  {
+    id: "g6",
+    title: "Presidia Luxury Enclave",
+    category: "Exterior Facade",
+    image: "./assets/kundanspaces/projects/presidia.webp",
+    desc: "Sprawling luxury gated community delivered by Kundan Spaces featuring grand podium amenities.",
+    isOfficial: true,
+    badgeText: "Delivered Landmark"
+  },
+  {
+    id: "g7",
+    title: "Kundan Praangan Grand Nature Living",
+    category: "Exterior Facade",
+    image: "./assets/kundanspaces/projects/kundan-praangan.webp",
+    desc: "Nature-inspired delivered residential community exemplifying biophilic living.",
+    isOfficial: true,
+    badgeText: "Delivered Landmark"
+  },
+  {
+    id: "g8",
+    title: "Eternia Riverfront Residences",
+    category: "Exterior Facade",
+    image: "./assets/kundanspaces/projects/eternia.webp",
+    desc: "Premium riverview high-rise residences crafted by Kundan Spaces.",
+    isOfficial: true,
+    badgeText: "Delivered Landmark"
+  },
+  {
+    id: "g9",
+    title: "Innovation & Sustainable Architecture",
+    category: "Wellness & Club",
+    image: "./assets/kundanspaces/shared/innovation-construction.webp",
+    desc: "Green building excellence, solar integration, and water conservation practices at Kundan Spaces.",
+    isOfficial: true,
+    badgeText: "Kundan Innovation"
+  },
+  {
+    id: "g10",
     title: "Double-Height Great Living Pavilion",
     category: "Living & Interiors",
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85",
@@ -40,7 +225,7 @@ export const GALLERY_ITEMS = [
     isOfficial: false
   },
   {
-    id: "g3",
+    id: "g11",
     title: "Level 33 Sky Sanctum Infinity Pool",
     category: "Sky Sanctum & Pool",
     image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1600&q=85",
@@ -48,51 +233,11 @@ export const GALLERY_ITEMS = [
     isOfficial: false
   },
   {
-    id: "g4",
+    id: "g12",
     title: "Presidential Master Sanctuary",
     category: "Living & Interiors",
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85",
     desc: "Opulent master suite featuring private walk-in boutique, 5-fixture marble bath, and sunset glass balcony.",
-    isOfficial: false
-  },
-  {
-    id: "g5",
-    title: "Private 24-Seat Dolby Atmos Cinema",
-    category: "Wellness & Club",
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=85",
-    desc: "Studio-tuned private cinema with motorized leather recliners and 4K laser projection exclusively for residents.",
-    isOfficial: false
-  },
-  {
-    id: "g6",
-    title: "Triple-Height Grand Arrival Lobby",
-    category: "Exterior Facade",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=85",
-    desc: "Marble-clad monumental entryway with 24/7 dedicated concierge desk, valet drop-off, and water cascades.",
-    isOfficial: false
-  },
-  {
-    id: "g7",
-    title: "Japanese Karesansui Zen Rock Garden",
-    category: "Wellness & Club",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=85",
-    desc: "Authentic raked gravel Zen courtyard with Japanese maples, bonsai, and reflexology stone trails.",
-    isOfficial: false
-  },
-  {
-    id: "g8",
-    title: "TechnoGym Health & Fitness Arena",
-    category: "Wellness & Club",
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=85",
-    desc: "Biomechanically engineered Italian fitness gear, Pilates reformers, and panoramic outdoor stretching deck.",
-    isOfficial: false
-  },
-  {
-    id: "g9",
-    title: "Starlight Celestial Observatory Deck",
-    category: "Sky Sanctum & Pool",
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=85",
-    desc: "Rooftop telescope observatory for stargazing soirees above city illumination.",
     isOfficial: false
   }
 ];
@@ -106,7 +251,7 @@ export const IKIGAI_PILLARS = [
     desc: "Designed around biophilic principles, natural airflow orientation, and elevated oxygen zones. The rooftop Sky Sanctum and reflexology pathways nurture physical vitality and mental tranquility.",
     features: ["Biophilic Air-Filtration Flora", "Acoustically Isolated Sleeping Sanctuaries", "Skyline Yoga Deck & Himalayan Salt Sauna", "Reflexology Zen Courtyard"],
     icon: "HeartPulse",
-    bg: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"
+    bg: "./assets/kundanspaces/shared/trust-interior.webp"
   },
   {
     id: "chowa",
@@ -116,7 +261,7 @@ export const IKIGAI_PILLARS = [
     desc: "Balancing collective celebration with absolute individual privacy. Expansive layouts accommodate grand multi-generational family living with private senior retreats and independent staff quarters.",
     features: ["Double-Height 22ft Family Living Atrium", "Multi-Generational Acoustic Separation", "Zero-Threshold Ergonomic Flooring", "Dedicated Maid Suite with Private Service Core"],
     icon: "Layers",
-    bg: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+    bg: "./assets/kundanspaces/shared/quality-construction.webp"
   },
   {
     id: "yutakasa",
@@ -126,7 +271,7 @@ export const IKIGAI_PILLARS = [
     desc: "True luxury is rarity. With only two sprawling residences per floor and a total of only 66 families across the entire 33-floor landmark, your home is an untouchable private citadel.",
     features: ["Only 2 Residences Per Floor", "Private Keycard Biometric Foyer", "270° Wraparound Deep Sundecks", "3 Dedicated Reserved Covered Parking Bays"],
     icon: "ShieldCheck",
-    bg: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+    bg: "./assets/kundanspaces/projects/arvaana1.webp"
   },
   {
     id: "kizuna",
@@ -136,7 +281,7 @@ export const IKIGAI_PILLARS = [
     desc: "A carefully curated enclave where visionary founders, captains of industry, and discerning achievers build bonds of trust and camaraderie in high-society private social sanctums.",
     features: ["Private Dolby Atmos 24-Seat Cinema", "Sky Observatory & Starlight Lounge", "The Ikigai Executive Boardroom & Library", "Curated Cigar, Wine & Tasting Salon"],
     icon: "Users",
-    bg: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+    bg: "./assets/kundanspaces/shared/innovation-construction.webp"
   }
 ];
 
@@ -151,7 +296,7 @@ export const CONFIGURATIONS = [
     basePrice: 39500000,
     priceDisplay: "₹3.95 Cr*",
     tag: "Most Coveted",
-    floorPlanImage: "/assets/floorplans/floorplan-4bhk.svg",
+    floorPlanImage: "./assets/floorplans/floorplan-4bhk.svg",
     overview: "A majestic corner residence spanning 2,160 sq. ft. of pure carpet efficiency. Features a 22-ft double-height living pavilion, 4 en-suite bedrooms, imported Italian marble, and a private maid's suite.",
     rooms: [
       { name: "Double-Height Grand Living & Dining", dimensions: "28' 6\" × 18' 0\"", highlight: "22-ft vertical ceiling with 180° glass facade" },
@@ -181,7 +326,7 @@ export const CONFIGURATIONS = [
     basePrice: 42500000,
     priceDisplay: "₹4.25 Cr*",
     tag: "High-Rise Signature",
-    floorPlanImage: "/assets/floorplans/floorplan-4-5bhk.svg",
+    floorPlanImage: "./assets/floorplans/floorplan-4-5bhk.svg",
     overview: "Elevated high-rise living with an expanded private office / media lounge. 2,269 sq. ft. of refined carpet luxury with an extra-wide 3-sided glass exposure overlooking Baner hills.",
     rooms: [
       { name: "Palatial Double-Height Living Room", dimensions: "31' 0\" × 19' 6\"", highlight: "Triple-aspect panoramic windows with sunset deck" },
@@ -212,7 +357,7 @@ export const CONFIGURATIONS = [
     basePrice: 85000000,
     priceDisplay: "₹8.50 Cr*",
     tag: "Ultra-Bespoke (Only 4 Available)",
-    floorPlanImage: "/assets/floorplans/floorplan-duplex.svg",
+    floorPlanImage: "./assets/floorplans/floorplan-duplex.svg",
     overview: "An architectural tour de force spanning two complete levels with an internal floating sculptural staircase, private plunge pool, and uninhibited 360° unobstructed Pune skyline views.",
     rooms: [
       { name: "Double-Height Great Hall", dimensions: "42' 0\" × 24' 0\"", highlight: "30-ft soaring ceilings with monumental chandelier drop" },

@@ -6,6 +6,7 @@ import TowerNavigator from './components/TowerNavigator';
 import ResidenceConfigurator from './components/ResidenceConfigurator';
 import MasterPlanSection from './components/MasterPlanSection';
 import GallerySection from './components/GallerySection';
+import KundanPortfolioSection from './components/KundanPortfolioSection';
 import VirtualTour360 from './components/VirtualTour360';
 import AmenitiesShowcase from './components/AmenitiesShowcase';
 import LocationRadar from './components/LocationRadar';
@@ -72,6 +73,9 @@ export default function App() {
 
       {/* Official Architectural Gallery with Fullscreen Lightbox */}
       <GallerySection />
+
+      {/* Kundan Spaces Delivered Pune Landmarks, Quality Craftsmanship & Leadership */}
+      <KundanPortfolioSection />
 
       {/* 360° Interactive Draggable Virtual Room Walkthrough */}
       <VirtualTour360 />

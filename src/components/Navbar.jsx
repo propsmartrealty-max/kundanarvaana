@@ -27,7 +27,8 @@ export default function Navbar({ onOpenVisitModal, onOpenDossierModal }) {
     { name: "Residences", href: "#residences" },
     { name: "Master Plan", href: "#master-plan" },
     { name: "Gallery", href: "#gallery" },
-    { name: "360° Walkthrough", href: "#virtual-tour" },
+    { name: "Kundan Landmarks", href: "#kundan-heritage" },
+    { name: "360° Tour", href: "#virtual-tour" },
     { name: "Amenities", href: "#amenities" },
     { name: "Connectivity", href: "#location" },
     { name: "Cost & EMI", href: "#calculator" },
@@ -62,7 +63,7 @@ export default function Navbar({ onOpenVisitModal, onOpenDossierModal }) {
           </a>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden xl:flex items-center gap-5">
+          <div className="hidden xl:flex items-center gap-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}
