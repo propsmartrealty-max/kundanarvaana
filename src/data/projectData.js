@@ -16,7 +16,7 @@ export const PROJECT_INFO = {
   ceilingHeight: "11.5 ft Clear Height & 22+ ft Double-Height Living Spaces",
   facade: "High-Performance Acoustic DGU Low-E Glass with 270° Panoramic City & Hill Vistas",
   officialLogo: "/assets/kundans/kundan-logo.svg",
-  officialHeroImage: "/assets/ai/kundan-arvaana-ai-key-visual.jpg",
+  officialHeroImage: "/assets/hero/kundan-arvaana-hero.webp",
   masterPlanImage: "/assets/masterplan/master-site-plan.svg",
   mapEmbedUrl: "https://maps.google.com/maps?q=Arvaana%2C%20Balewadi%2C%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed",
 };
@@ -24,12 +24,12 @@ export const PROJECT_INFO = {
 export const GALLERY_ITEMS = [
   {
     id: "g1",
-    title: "AI Architectural Master Render",
+    title: "Ikigai Architectural Elevation & Sakura Vista",
     category: "Exterior Facade",
-    image: "/assets/ai/kundan-arvaana-ai-key-visual.jpg",
-    desc: "AI-envisioned 33-storey Ikigai luxury tower featuring champagne-gold vertical fins, double-height biophilic balconies, cantilevered sky pool, and grand arrival plaza at golden hour twilight.",
+    image: "/assets/hero/kundan-arvaana-hero.webp",
+    desc: "Soaring 33-storey Ikigai luxury tower with bronze vertical fins and double-height glass framing, framed by cherry blossoms and Japanese floral landscape.",
     isOfficial: true,
-    badgeText: "AI Master Visual"
+    badgeText: "Ikigai Landmark Elevation"
   },
   {
     id: "g2",
