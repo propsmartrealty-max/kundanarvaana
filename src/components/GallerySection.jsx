@@ -34,7 +34,7 @@ export default function GallerySection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-xs font-medium tracking-widest uppercase mb-4">
-            Curated Visual Portfolio • Official Gallery
+            Curated Visual Portfolio • Architectural Gallery
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl font-bold text-white tracking-tight mb-4">
             Architectural <span className="bg-gradient-to-r from-gold-300 to-amber-400 bg-clip-text text-transparent">Grandeur & Finishes</span>
@@ -83,7 +83,7 @@ export default function GallerySection() {
                 </span>
                 {item.isOfficial && (
                   <span className="text-[10px] uppercase font-bold tracking-wider px-2.5 py-1 rounded bg-gold-400 text-obsidian-950 shadow-md">
-                    Official Key Render
+                    {item.badgeText || "AI Master Render"}
                   </span>
                 )}
               </div>
@@ -124,8 +124,8 @@ export default function GallerySection() {
                   {currentLightboxItem.category}
                 </span>
                 {currentLightboxItem.isOfficial && (
-                  <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded bg-gold-400 text-black">
-                    Official Developer Render
+                  <span className="text-[10px] uppercase font-bold px-2.5 py-0.5 rounded bg-gold-400 text-black">
+                    {currentLightboxItem.badgeText || "AI Master Render"}
                   </span>
                 )}
               </div>

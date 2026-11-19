@@ -10,13 +10,13 @@ export default function Hero({ onOpenVisitModal, onExploreTower, onExploreReside
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=2000&q=85')`,
+            backgroundImage: `url('${PROJECT_INFO.officialHeroImage}')`,
           }}
         />
         {/* Multi-layered luxury gradients for obsidian-gold depth */}
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/85 to-obsidian-950/50" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(184,147,44,0.14)_0%,transparent_70%)]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/90 via-transparent to-obsidian-950/90" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(184,147,44,0.16)_0%,transparent_70%)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-obsidian-950/95 via-obsidian-950/60 to-obsidian-950/95" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-6">
@@ -75,36 +75,36 @@ export default function Hero({ onOpenVisitModal, onExploreTower, onExploreReside
             </div>
           </div>
 
-          {/* Right: Actual Official Arvaana Key Visual Render Box */}
+          {/* Right: AI-Created Architectural Master Visual Box */}
           <div className="lg:col-span-5 relative group">
-            <div className="relative rounded-3xl overflow-hidden border-2 border-gold-400/40 shadow-2xl bg-black aspect-[4/3] group-hover:border-gold-300 transition-all">
+            <div className="relative rounded-3xl overflow-hidden border-2 border-gold-400/50 shadow-2xl bg-black aspect-[4/3] group-hover:border-gold-300 transition-all">
               <img
                 src={PROJECT_INFO.officialHeroImage}
-                alt="Kundan Arvaana Official Architectural Render"
+                alt="Kundan Arvaana AI Architectural Master Render"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-transparent opacity-80" />
+              <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-transparent opacity-85" />
 
-              {/* Verified Developer Stamp */}
-              <div className="absolute top-4 left-4 bg-black/75 backdrop-blur-md px-3 py-1.5 rounded-full border border-gold-400/40 text-[10px] uppercase font-bold text-gold-300 flex items-center gap-1.5 shadow-lg">
+              {/* AI Master Visual Pill */}
+              <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-gold-400/50 text-[10px] uppercase font-bold text-gold-300 flex items-center gap-1.5 shadow-xl">
                 <Sparkles className="w-3.5 h-3.5 text-gold-400" />
-                <span>Official Developer Key Visual</span>
+                <span>AI Architectural Master Render</span>
               </div>
 
               {/* Bottom Caption inside image */}
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
                 <div>
                   <div className="font-serif text-sm font-bold text-white">
-                    Iconic 33-Storey Landmark
+                    33-Storey Ikigai Sky Citadel
                   </div>
                   <div className="text-[11px] text-champagne/70 font-mono">
-                    Balewadi High Street Corridor
+                    Balewadi, Pune West
                   </div>
                 </div>
 
                 <a
                   href="#gallery"
-                  className="px-3 py-1.5 rounded-lg bg-gold-400/90 hover:bg-gold-300 text-obsidian-950 font-bold text-[10px] uppercase tracking-wider flex items-center gap-1"
+                  className="px-3 py-1.5 rounded-lg bg-gold-400 hover:bg-gold-300 text-obsidian-950 font-bold text-[10px] uppercase tracking-wider flex items-center gap-1 shadow-md"
                 >
                   <ImageIcon className="w-3 h-3" />
                   <span>Gallery</span>

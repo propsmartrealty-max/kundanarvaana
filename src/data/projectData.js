@@ -16,7 +16,7 @@ export const PROJECT_INFO = {
   ceilingHeight: "11.5 ft Clear Height & 22+ ft Double-Height Living Spaces",
   facade: "High-Performance Acoustic DGU Low-E Glass with 270° Panoramic City & Hill Vistas",
   officialLogo: "/assets/kundans/kundan-logo.svg",
-  officialHeroImage: "/assets/kundans/arvaana1.webp",
+  officialHeroImage: "/assets/ai/kundan-arvaana-ai-key-visual.jpg",
   masterPlanImage: "/assets/masterplan/master-site-plan.svg",
   mapEmbedUrl: "https://maps.google.com/maps?q=Arvaana%2C%20Balewadi%2C%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed",
 };
@@ -24,11 +24,12 @@ export const PROJECT_INFO = {
 export const GALLERY_ITEMS = [
   {
     id: "g1",
-    title: "Official Key Visual & Facade",
+    title: "AI Architectural Master Render",
     category: "Exterior Facade",
-    image: "/assets/kundans/arvaana1.webp",
-    desc: "The landmark 33-storey soaring glass tower overlooking the Balewadi skyline with signature double-height glazed balconies.",
-    isOfficial: true
+    image: "/assets/ai/kundan-arvaana-ai-key-visual.jpg",
+    desc: "AI-envisioned 33-storey Ikigai luxury tower featuring champagne-gold vertical fins, double-height biophilic balconies, cantilevered sky pool, and grand arrival plaza at golden hour twilight.",
+    isOfficial: true,
+    badgeText: "AI Master Visual"
   },
   {
     id: "g2",
