@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kundan Arvaana | Ultra-Luxury Ikigai Grand Residences | Balewadi, Pune</title>
     <meta name="description" content="Kundan Arvaana, Balewadi — India's Premier Ikigai-inspired Ultra-Luxury Residences. Only 66 Grand 4 & 4.5 BHK Bespoke Residences across 33 soaring levels. MahaRERA: PR1260002600277." />
+    <!-- Ensure trailing slash on subdirectory hosting (GitHub Pages) so relative paths resolve cleanly -->
+    <script>
+      if (!location.pathname.endsWith('/') && !location.pathname.split('/').pop().includes('.')) {
+        location.replace(location.pathname + '/' + location.search + location.hash);
+      }
+    </script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
