@@ -11,6 +11,7 @@ import VirtualTour360 from './components/VirtualTour360';
 import AmenitiesShowcase from './components/AmenitiesShowcase';
 import LocationRadar from './components/LocationRadar';
 import InvestmentCalculator from './components/InvestmentCalculator';
+import FaqSection from './components/FaqSection';
 import DeveloperStory from './components/DeveloperStory';
 import Footer from './components/Footer';
 import VipDossierModal from './components/VipDossierModal';
@@ -92,6 +93,11 @@ export default function App() {
       <InvestmentCalculator
         onOpenVisitModal={handleOpenVisit}
         onOpenDossierModal={handleOpenDossier}
+      />
+
+      {/* Frequently Asked Questions • MahaRERA & Location Architecture */}
+      <FaqSection
+        onOpenVisitModal={handleOpenVisit}
       />
 
       {/* 46-Year Kundan Spaces Pedigree & MahaRERA Compliance */}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://propsmartrealty-max.github.io/kundanarvaana/sitemap.xml
