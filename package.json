@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp dist/index.template.html dist/index.html && cp dist/index.template.html dist/404.html && touch dist/.nojekyll && cp dist/index.template.html ./index.html && cp -rf dist/assets . && cp dist/404.html ./404.html && touch .nojekyll",
+    "build": "vite build && cp dist/index.template.html dist/index.html && cp dist/index.template.html dist/404.html && touch dist/.nojekyll && cp dist/index.template.html ./index.html && cp -rf dist/assets . && cp dist/404.html ./404.html && touch .nojekyll && node scripts/generate-static-routes.js",
     "preview": "vite preview"
   },
   "dependencies": {

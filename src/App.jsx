@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Philosophy from './components/Philosophy';
@@ -10,16 +10,25 @@ import KundanPortfolioSection from './components/KundanPortfolioSection';
 import VirtualTour360 from './components/VirtualTour360';
 import AmenitiesShowcase from './components/AmenitiesShowcase';
 import LocationRadar from './components/LocationRadar';
+import BanerBalewadiMarketSection from './components/BanerBalewadiMarketSection';
 import InvestmentCalculator from './components/InvestmentCalculator';
 import FaqSection from './components/FaqSection';
 import DeveloperStory from './components/DeveloperStory';
 import Footer from './components/Footer';
 import VipDossierModal from './components/VipDossierModal';
 import SiteVisitModal from './components/SiteVisitModal';
+import { handleInitialRouting } from './utils/seoRouter';
 
 export default function App() {
   const [isVisitModalOpen, setIsVisitModalOpen] = useState(false);
   const [isDossierModalOpen, setIsDossierModalOpen] = useState(false);
+
+  useEffect(() => {
+    handleInitialRouting();
+    const onPopState = () => handleInitialRouting();
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
 
   const handleOpenVisit = () => setIsVisitModalOpen(true);
   const handleCloseVisit = () => setIsVisitModalOpen(false);
@@ -87,6 +96,11 @@ export default function App() {
 
       {/* Balewadi Location Advantage & Live Google Maps Embed */}
       <LocationRadar />
+
+      {/* Baner-Balewadi & Pune Luxury Real Estate Market Intelligence Section */}
+      <BanerBalewadiMarketSection 
+        onOpenVisitModal={handleOpenVisit}
+      />
 
       {/* Dynamic Statutory Cost Sheet & EMI Calculator */}
       <InvestmentCalculator

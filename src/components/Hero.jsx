@@ -1,8 +1,17 @@
 import React from 'react';
 import { ArrowUpRight, ShieldCheck, Sparkles, Building2, Eye, KeyRound, Image as ImageIcon } from 'lucide-react';
 import { PROJECT_INFO } from '../data/projectData';
+import { SEO_ROUTES, navigateToRoute, getCleanUrl } from '../utils/seoRouter';
 
 export default function Hero({ onOpenVisitModal, onExploreTower, onExploreResidences }) {
+  const masterPlanRoute = SEO_ROUTES.find(r => r.slug === 'master-plan');
+  const galleryRoute = SEO_ROUTES.find(r => r.slug === 'gallery');
+  const towerRoute = SEO_ROUTES.find(r => r.slug === 'tower');
+
+  const handleRouteClick = (e, route) => {
+    e.preventDefault();
+    if (route) navigateToRoute(route);
+  };
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
       {/* Background Architectural Canvas / Luxury Imagery */}
@@ -59,7 +68,7 @@ export default function Hero({ onOpenVisitModal, onExploreTower, onExploreReside
               </button>
 
               <button
-                onClick={onExploreTower}
+                onClick={(e) => handleRouteClick(e, towerRoute)}
                 className="w-full sm:w-auto px-6 py-3 rounded-full border border-gold-400/40 bg-obsidian-900/60 hover:bg-gold-500/10 text-gold-200 font-semibold text-xs tracking-wider uppercase backdrop-blur-md transition-all flex items-center justify-center gap-2"
               >
                 <Building2 className="w-4 h-4 text-gold-400" />
@@ -67,7 +76,8 @@ export default function Hero({ onOpenVisitModal, onExploreTower, onExploreReside
               </button>
 
               <a
-                href="#master-plan"
+                href={getCleanUrl('kundan-arvaana-master-plan-floor-plans')}
+                onClick={(e) => handleRouteClick(e, masterPlanRoute)}
                 className="w-full sm:w-auto px-6 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-champagne font-semibold text-xs tracking-wider uppercase backdrop-blur-md transition-all flex items-center justify-center gap-2"
               >
                 <span>Master Blueprints</span>
@@ -103,7 +113,8 @@ export default function Hero({ onOpenVisitModal, onExploreTower, onExploreReside
                 </div>
 
                 <a
-                  href="#gallery"
+                  href={getCleanUrl('kundan-arvaana-gallery-elevation-balewadi')}
+                  onClick={(e) => handleRouteClick(e, galleryRoute)}
                   className="px-3 py-1.5 rounded-lg bg-gold-400 hover:bg-gold-300 text-obsidian-950 font-bold text-[10px] uppercase tracking-wider flex items-center gap-1 shadow-md"
                 >
                   <ImageIcon className="w-3 h-3" />

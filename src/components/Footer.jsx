@@ -1,10 +1,19 @@
 import React from 'react';
 import { PROJECT_INFO } from '../data/projectData';
 import { ShieldCheck, Phone, Mail, MapPin, ArrowUp, ExternalLink } from 'lucide-react';
+import { SEO_ROUTES, navigateToRoute, getCleanUrl } from '../utils/seoRouter';
 
-export default function Footer({ onOpenVisitModal, onOpenDossierModal }) {
+export default function Footer({ onOpenVisitModal }) {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleLinkClick = (e, routeSlug) => {
+    e.preventDefault();
+    const route = SEO_ROUTES.find(r => r.slug === routeSlug);
+    if (route) {
+      navigateToRoute(route);
+    }
   };
 
   return (
@@ -48,32 +57,120 @@ export default function Footer({ onOpenVisitModal, onOpenDossierModal }) {
             </div>
           </div>
 
-          {/* Quick Nav Col */}
+          {/* Quick Nav Col (Hash-Free Permalinks) */}
           <div className="lg:col-span-2 space-y-3">
             <h4 className="text-xs uppercase font-bold tracking-widest text-white">
               The Residences
             </h4>
             <ul className="space-y-2 text-xs">
-              <li><a href="#philosophy" className="hover:text-gold-300 transition-colors">Ikigai Philosophy</a></li>
-              <li><a href="#tower" className="hover:text-gold-300 transition-colors">33-Floor Tower Stack</a></li>
-              <li><a href="#master-plan" className="hover:text-gold-300 transition-colors">Master Site Layout</a></li>
-              <li><a href="#residences" className="hover:text-gold-300 transition-colors">4 BHK Grand (2,160 sq.ft)</a></li>
-              <li><a href="#residences" className="hover:text-gold-300 transition-colors">4.5 BHK Presidential</a></li>
-              <li><a href="#residences" className="hover:text-gold-300 transition-colors">Crown Sky Duplex</a></li>
+              <li>
+                <a 
+                  href={getCleanUrl('kundan-arvaana-balewadi')} 
+                  onClick={(e) => handleLinkClick(e, 'overview')}
+                  className="hover:text-gold-300 transition-colors"
+                >
+                  Ikigai Philosophy
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={getCleanUrl('kundan-arvaana-tower-balewadi')} 
+                  onClick={(e) => handleLinkClick(e, 'tower')}
+                  className="hover:text-gold-300 transition-colors"
+                >
+                  33-Floor Tower Stack
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={getCleanUrl('kundan-arvaana-master-plan-floor-plans')} 
+                  onClick={(e) => handleLinkClick(e, 'master-plan')}
+                  className="hover:text-gold-300 transition-colors"
+                >
+                  Master Site Layout
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={getCleanUrl('kundan-arvaana-4bhk-residences-balewadi')} 
+                  onClick={(e) => handleLinkClick(e, 'residences')}
+                  className="hover:text-gold-300 transition-colors"
+                >
+                  4.5 BHK Type 01 & 02
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={getCleanUrl('kundan-arvaana-4bhk-residences-balewadi')} 
+                  onClick={(e) => handleLinkClick(e, 'residences')}
+                  className="hover:text-gold-300 transition-colors"
+                >
+                  Crown Sky Duplex (4,385 sq.ft)
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Privileges & Location Col */}
+          {/* Privileges & Location Col (Hash-Free Permalinks) */}
           <div className="lg:col-span-2 space-y-3">
             <h4 className="text-xs uppercase font-bold tracking-widest text-white">
               Privileges & Access
             </h4>
             <ul className="space-y-2 text-xs">
-              <li><a href="#gallery" className="hover:text-gold-300 transition-colors">Official Gallery</a></li>
-              <li><a href="#amenities" className="hover:text-gold-300 transition-colors">Sky Sanctum Pool</a></li>
-              <li><a href="#virtual-tour" className="hover:text-gold-300 transition-colors">360° Room Walkthrough</a></li>
-              <li><a href="#location" className="hover:text-gold-300 transition-colors">Balewadi High Street (2 min)</a></li>
-              <li><a href="#calculator" className="hover:text-gold-300 transition-colors">Investment & EMI Cost Sheet</a></li>
+              <li>
+                <a 
+                  href={getCleanUrl('kundan-arvaana-gallery-elevation-balewadi')} 
+                  onClick={(e) => handleLinkClick(e, 'gallery')}
+                  className="hover:text-gold-300 transition-colors"
+                >
+                  Official Gallery
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={getCleanUrl('kundan-arvaana-sky-amenities-balewadi')} 
+                  onClick={(e) => handleLinkClick(e, 'amenities')}
+                  className="hover:text-gold-300 transition-colors"
+                >
+                  Level 34 Sky Sanctum
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={getCleanUrl('kundan-arvaana-baner-balewadi-real-estate-market')} 
+                  onClick={(e) => handleLinkClick(e, 'market')}
+                  className="hover:text-gold-300 transition-colors text-gold-400 font-semibold"
+                >
+                  Baner-Balewadi Market Intel
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={getCleanUrl('kundan-arvaana-baner-balewadi-location')} 
+                  onClick={(e) => handleLinkClick(e, 'location')}
+                  className="hover:text-gold-300 transition-colors"
+                >
+                  Balewadi High Street (2 min)
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={getCleanUrl('kundan-arvaana-price-cost-sheet-pune')} 
+                  onClick={(e) => handleLinkClick(e, 'pricing')}
+                  className="hover:text-gold-300 transition-colors"
+                >
+                  Investment & Cost Sheet
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={getCleanUrl('kundan-arvaana-maharera-faq-balewadi')} 
+                  onClick={(e) => handleLinkClick(e, 'faq')}
+                  className="hover:text-gold-300 transition-colors"
+                >
+                  MahaRERA PR1260002600277 FAQ
+                </a>
+              </li>
             </ul>
           </div>
 

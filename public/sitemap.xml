@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Primary Homepage / Kundan Arvaana Overview -->
   <url>
     <loc>https://propsmartrealty-max.github.io/kundanarvaana/</loc>
-    <lastmod>2026-11-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://propsmartrealty-max.github.io/kundanarvaana/assets/hero/kundan-arvaana-hero.webp</image:loc>
       <image:title>Kundan Arvaana 33-Storey Ikigai Landmark Elevation in Balewadi, Pune</image:title>
       <image:caption>Official elevation visual of Kundan Arvaana framed by blooming cherry blossoms in Balewadi, Pune West.</image:caption>
     </image:image>
+  </url>
+
+  <!-- Clean Permalinks without '#' - Targeted Google Ranking Landing Pages -->
+  <url>
+    <loc>https://propsmartrealty-max.github.io/kundanarvaana/kundan-arvaana-balewadi</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
     <image:image>
-      <image:loc>https://propsmartrealty-max.github.io/kundanarvaana/assets/plans/master-site-plan-aerial.webp</image:loc>
-      <image:title>Kundan Arvaana Master Site Layout Plan</image:title>
-      <image:caption>Official full-color aerial site plan of Kundan Arvaana showing 24m entry, concentric Japanese driveway, 33 bays, and tower footprint.</image:caption>
+      <image:loc>https://propsmartrealty-max.github.io/kundanarvaana/assets/hero/kundan-arvaana-hero.webp</image:loc>
+      <image:title>Kundan Arvaana Balewadi Luxury Living</image:title>
     </image:image>
+  </url>
+
+  <url>
+    <loc>https://propsmartrealty-max.github.io/kundanarvaana/kundan-arvaana-baner-balewadi-real-estate-market</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
     <image:image>
-      <image:loc>https://propsmartrealty-max.github.io/kundanarvaana/assets/plans/amenities-level-34-plan.webp</image:loc>
-      <image:title>Kundan Arvaana 34th Floor Sky Amenity Level Blueprint</image:title>
-      <image:caption>Official architectural drawing of Level 34 with 25m heated lap pool, mini theatre, co-working, games lounge, and green lounge.</image:caption>
+      <image:loc>https://propsmartrealty-max.github.io/kundanarvaana/assets/hero/kundan-arvaana-hero.webp</image:loc>
+      <image:title>Baner-Balewadi Real Estate Market Intelligence & Appreciation Analysis</image:title>
     </image:image>
+  </url>
+
+  <url>
+    <loc>https://propsmartrealty-max.github.io/kundanarvaana/kundan-arvaana-4bhk-residences-balewadi</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
     <image:image>
       <image:loc>https://propsmartrealty-max.github.io/kundanarvaana/assets/plans/floorplan-type-01-full.webp</image:loc>
       <image:title>Kundan Arvaana 4.5 BHK Type 01 Architectural Floor Plan</image:title>
@@ -32,4 +54,68 @@
       <image:caption>Monumental 4,385 sq.ft sky duplex penthouse architectural blueprint with double-height Great Hall and floating staircase.</image:caption>
     </image:image>
   </url>
+
+  <url>
+    <loc>https://propsmartrealty-max.github.io/kundanarvaana/kundan-arvaana-master-plan-floor-plans</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://propsmartrealty-max.github.io/kundanarvaana/assets/plans/master-site-plan-aerial.webp</image:loc>
+      <image:title>Kundan Arvaana Master Site Layout Plan</image:title>
+      <image:caption>Official full-color aerial site plan of Kundan Arvaana showing 24m entry, concentric Japanese driveway, 33 bays, and tower footprint.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://propsmartrealty-max.github.io/kundanarvaana/kundan-arvaana-sky-amenities-balewadi</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+    <image:image>
+      <image:loc>https://propsmartrealty-max.github.io/kundanarvaana/assets/plans/amenities-level-34-plan.webp</image:loc>
+      <image:title>Kundan Arvaana 34th Floor Sky Amenity Level Blueprint</image:title>
+      <image:caption>Official architectural drawing of Level 34 with 25m heated lap pool, mini theatre, co-working, games lounge, and green lounge.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://propsmartrealty-max.github.io/kundanarvaana/kundan-arvaana-tower-balewadi</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://propsmartrealty-max.github.io/kundanarvaana/assets/plans/elevation-architectural-monochrome.webp</image:loc>
+      <image:title>33-Storey Elevation Engineering Kundan Arvaana</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://propsmartrealty-max.github.io/kundanarvaana/kundan-arvaana-baner-balewadi-location</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://propsmartrealty-max.github.io/kundanarvaana/kundan-arvaana-price-cost-sheet-pune</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://propsmartrealty-max.github.io/kundanarvaana/kundan-arvaana-gallery-elevation-balewadi</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://propsmartrealty-max.github.io/kundanarvaana/kundan-arvaana-maharera-faq-balewadi</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
 </urlset>
