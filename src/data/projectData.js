@@ -18,7 +18,12 @@ export const PROJECT_INFO = {
   officialLogo: "./assets/kundans/kundan-logo.svg",
   officialHeroImage: "./assets/hero/kundan-arvaana-hero.webp",
   arvaanaRender: "./assets/kundanspaces/projects/arvaana1.webp",
-  masterPlanImage: "./assets/masterplan/master-site-plan.svg",
+  masterPlanImage: "./assets/plans/master-site-plan-aerial.webp",
+  masterLayoutFull: "./assets/brochure/master-layout-full.webp",
+  amenitiesFloorPlan: "./assets/plans/amenities-level-34-plan.webp",
+  amenitiesFull: "./assets/brochure/amenities-level-34-full.webp",
+  elevationMonochrome: "./assets/plans/elevation-architectural-monochrome.webp",
+  elevationEditorial: "./assets/brochure/elevation-editorial-full.webp",
   mapEmbedUrl: "https://maps.google.com/maps?q=Arvaana%2C%20Balewadi%2C%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed",
 };
 
@@ -135,6 +140,51 @@ export const KUNDAN_LEADERSHIP = [
 ];
 
 export const GALLERY_ITEMS = [
+  {
+    id: "g-master",
+    title: "Official Master Site Layout & Aerial Circulation",
+    category: "Master Plan",
+    image: "./assets/plans/master-site-plan-aerial.webp",
+    desc: "Original Kundan Arvaana master layout showing the 24m road entrance, concentric Japanese zen driveway, drop-off plaza, 33 car parking bays, and central tower footprint.",
+    isOfficial: true,
+    badgeText: "Official Site Layout"
+  },
+  {
+    id: "g-amenity34",
+    title: "34th-Floor Sky Amenity Level Blueprint",
+    category: "Wellness & Club",
+    image: "./assets/plans/amenities-level-34-plan.webp",
+    desc: "Official architectural CAD drawing of the 34th level featuring the 25m sky lap pool, kids splash pool, timber pool deck, private mini theatre, co-working hub, indoor games, and zen green lounge.",
+    isOfficial: true,
+    badgeText: "Official Level 34 Blueprint"
+  },
+  {
+    id: "g-editorial",
+    title: "Architectural Statement — A Vertical Expression",
+    category: "Exterior Facade",
+    image: "./assets/brochure/elevation-editorial-full.webp",
+    desc: "'This is not luxury for the world to see, it's for you to feel.' Official architectural brochure spread featuring soaring vertical bronze fins, extensive glazing, and cantilevered balconies.",
+    isOfficial: true,
+    badgeText: "Developer Editorial"
+  },
+  {
+    id: "g-plan-t1",
+    title: "4.5 BHK Type 01 (Elite & Grande) Architectural Floor Plan",
+    category: "Living & Interiors",
+    image: "./assets/plans/floorplan-type-01-full.webp",
+    desc: "Supplied floor plan for 2nd, 6th, 10th, 14th, 18th, 22nd and 26th floors. Showing Type 1A (2,235 sq.ft) & Type 1B (2,246 sq.ft) with double-height pavilions.",
+    isOfficial: true,
+    badgeText: "Official Floor Plan"
+  },
+  {
+    id: "g-plan-duplex",
+    title: "Crown Sky Duplex Penthouse (4,385 SQ.FT)",
+    category: "Living & Interiors",
+    image: "./assets/plans/floorplan-duplex-lower.webp",
+    desc: "Official duplex architectural floor plan spanning 4,385 sq.ft with monumental 30-ft Great Hall, floating spiral staircase, and master sanctuary wing.",
+    isOfficial: true,
+    badgeText: "Duplex Penthouse Plan"
+  },
   {
     id: "g1",
     title: "Arvaana Ikigai Elevation & Sakura Vista",
@@ -287,26 +337,51 @@ export const IKIGAI_PILLARS = [
 
 export const CONFIGURATIONS = [
   {
-    id: "4bhk",
-    name: "4 BHK Grand Residence",
-    type: "Signature Luxury",
-    carpetArea: 2160,
-    usableArea: 2480,
-    balconyArea: 240,
-    basePrice: 39500000,
-    priceDisplay: "₹3.95 Cr*",
-    tag: "Most Coveted",
-    floorPlanImage: "./assets/floorplans/floorplan-4bhk.svg",
-    overview: "A majestic corner residence spanning 2,160 sq. ft. of pure carpet efficiency. Features a 22-ft double-height living pavilion, 4 en-suite bedrooms, imported Italian marble, and a private maid's suite.",
+    id: "type01",
+    name: "Type 01 — Elite & Grande",
+    type: "4.5 BHK Grand Ikigai Residences",
+    floors: "2nd, 6th, 10th, 14th, 18th, 22nd & 26th Floors",
+    carpetArea: 2235,
+    maxCarpetArea: 2246,
+    usableArea: 2580,
+    balconyArea: 189,
+    basePrice: 41500000,
+    priceDisplay: "₹4.15 Cr*",
+    tag: "Typical Floors: 2, 6, 10, 14, 18, 22, 26",
+    floorPlanImage: "./assets/plans/floorplan-type-01-full.webp",
+    unitAImage: "./assets/plans/floorplan-unit-1a.webp",
+    unitBImage: "./assets/plans/floorplan-unit-1b.webp",
+    scheduleCard: "./assets/brochure/schedule-type-01.webp",
+    scheduleTable: "./assets/plans/table-schedule-type-01.webp",
+    overview: "Official Type 01 architectural layout supplied for 2nd, 6th, 10th, 14th, 18th, 22nd and 26th levels. Features two grand residences per floor (Type 1A: 2,235 sq.ft & Type 1B: 2,246 sq.ft) with private lift lobby, double-height living & dining, expansive sit-out terraces, and dedicated servant quarters.",
+    units: [
+      {
+        unit: "Type 01 • 1A (Flat 201)",
+        reraCarpet: "190.11 sq.m (2,046 sq.ft)",
+        enclBalcony: "3.28 sq.m (35 sq.ft)",
+        dryBalcony: "5.38 sq.m (58 sq.ft)",
+        sitOut: "8.88 sq.m (96 sq.ft)",
+        totalCarpet: "207.64 sq.m (2,235 sq.ft)"
+      },
+      {
+        unit: "Type 01 • 1B (Flat 202)",
+        reraCarpet: "191.39 sq.m (2,060 sq.ft)",
+        enclBalcony: "3.28 sq.m (35 sq.ft)",
+        dryBalcony: "5.12 sq.m (55 sq.ft)",
+        sitOut: "8.88 sq.m (96 sq.ft)",
+        totalCarpet: "208.62 sq.m (2,246 sq.ft)"
+      }
+    ],
     rooms: [
-      { name: "Double-Height Grand Living & Dining", dimensions: "28' 6\" × 18' 0\"", highlight: "22-ft vertical ceiling with 180° glass facade" },
-      { name: "Master Presidential Sanctuary", dimensions: "19' 2\" × 15' 6\"", highlight: "Walk-in dressing lounge + 5-fixture marble bath" },
-      { name: "Junior Master Suite", dimensions: "16' 4\" × 14' 0\"", highlight: "Private sunset balcony & wooden plank flooring" },
-      { name: "Guest Bedroom 3", dimensions: "14' 8\" × 12' 6\"", highlight: "En-suite bathroom with German Kohler fittings" },
-      { name: "Children's Suite / Study", dimensions: "13' 6\" × 12' 0\"", highlight: "Acoustically buffered with panoramic views" },
-      { name: "Gourmet Chef's Show Kitchen", dimensions: "15' 0\" × 10' 6\"", highlight: "Quartz counters, separate dry/wet prep & utility" },
-      { name: "Skyline Viewing Deck", dimensions: "24' 0\" × 7' 6\"", highlight: "Toughened frameless glass railing with hill vistas" },
-      { name: "Domestic Staff Suite & Bath", dimensions: "8' 6\" × 6' 0\"", highlight: "Separate service entrance from service lift lobby" }
+      { name: "Double-Height Formal Living & Dining", dimensions: "24'0\" × 15'0\"", highlight: "Soaring vertical glass curtain wall opening onto private sunset sit-out" },
+      { name: "Master Presidential Bedroom Suite", dimensions: "16'0\" × 13'0\"", highlight: "Attached luxury dressing lounge, walk-in closet & 5-fixture bath" },
+      { name: "Junior Master Bedroom 2", dimensions: "14'0\" × 12'0\"", highlight: "East-facing floor-to-ceiling windows with designer en-suite" },
+      { name: "Guest Bedroom 3", dimensions: "13'0\" × 11'6\"", highlight: "Acoustically insulated with private attached toilet" },
+      { name: "Bedroom 4 / Children's Suite", dimensions: "12'6\" × 11'0\"", highlight: "Cross-ventilated with premium wooden plank flooring" },
+      { name: "0.5 Family Lounge / Zen Study", dimensions: "11'0\" × 9'6\"", highlight: "Convertible media lounge, executive library or meditation chamber" },
+      { name: "Gourmet Chef's Kitchen", dimensions: "12'0\" × 11'0\"", highlight: "Includes attached 7'0\" × 5'7\" Utility Dry Balcony" },
+      { name: "Sky Sit-Out Terrace", dimensions: "19'2\" × 5'0\"", highlight: "96 sq.ft panoramic glass balcony facing Baner hills" },
+      { name: "Servant Room & Toilet", dimensions: "7'0\" × 6'0\"", highlight: "Private service lift corridor entry without entering main foyer" }
     ],
     specs: [
       "Flooring: 8x4 ft Book-matched Italian Botticino / Statuario Marble",
@@ -317,27 +392,51 @@ export const CONFIGURATIONS = [
     ]
   },
   {
-    id: "4_5bhk",
-    name: "4.5 BHK Presidential Residence",
-    type: "Presidential Tier",
-    carpetArea: 2269,
+    id: "type02",
+    name: "Type 02 — Imperial & Presidential",
+    type: "4.5 BHK Grand High-Altitude Residences",
+    floors: "3rd, 11th, 15th, 23rd, 27th & 31st Floors",
+    carpetArea: 2258,
+    maxCarpetArea: 2269,
     usableArea: 2620,
-    balconyArea: 285,
-    basePrice: 42500000,
-    priceDisplay: "₹4.25 Cr*",
-    tag: "High-Rise Signature",
-    floorPlanImage: "./assets/floorplans/floorplan-4-5bhk.svg",
-    overview: "Elevated high-rise living with an expanded private office / media lounge. 2,269 sq. ft. of refined carpet luxury with an extra-wide 3-sided glass exposure overlooking Baner hills.",
+    balconyArea: 194,
+    basePrice: 42800000,
+    priceDisplay: "₹4.28 Cr*",
+    tag: "Typical Floors: 3, 11, 15, 23, 27, 31",
+    floorPlanImage: "./assets/plans/floorplan-type-02-full.webp",
+    unitAImage: "./assets/plans/floorplan-unit-2a.webp",
+    unitBImage: "./assets/plans/floorplan-unit-2b.webp",
+    scheduleCard: "./assets/brochure/schedule-type-02.webp",
+    scheduleTable: "./assets/plans/table-schedule-type-02.webp",
+    overview: "Official Type 02 architectural layout supplied for 3rd, 11th, 15th, 23rd, 27th and 31st levels. Features the largest typical 4.5 BHK footprints: Type 2A offering 2,258 sq.ft total carpet and Type 2B offering 2,269 sq.ft total carpet with expanded family lounges and private foyer access.",
+    units: [
+      {
+        unit: "Type 02 • 2A (Flat 301)",
+        reraCarpet: "191.57 sq.m (2,062 sq.ft)",
+        enclBalcony: "0 sq.m (0 sq.ft)",
+        dryBalcony: "5.36 sq.m (58 sq.ft)",
+        sitOut: "8.88 sq.m (96 sq.ft)",
+        totalCarpet: "209.81 sq.m (2,258 sq.ft)"
+      },
+      {
+        unit: "Type 02 • 2B (Flat 302)",
+        reraCarpet: "196.8 sq.m (2,118 sq.ft)",
+        enclBalcony: "0 sq.m (0 sq.ft)",
+        dryBalcony: "5.12 sq.m (55 sq.ft)",
+        sitOut: "8.88 sq.m (96 sq.ft)",
+        totalCarpet: "210.79 sq.m (2,269 sq.ft)"
+      }
+    ],
     rooms: [
-      { name: "Palatial Double-Height Living Room", dimensions: "31' 0\" × 19' 6\"", highlight: "Triple-aspect panoramic windows with sunset deck" },
-      { name: "Master Grand Pent-Suite", dimensions: "21' 0\" × 16' 0\"", highlight: "His & Her walk-in closets, freestanding bathtub" },
-      { name: "Junior Suite 2", dimensions: "16' 8\" × 14' 6\"", highlight: "Attached luxury dressing niche and en-suite" },
-      { name: "Guest Suite 3", dimensions: "15' 0\" × 13' 0\"", highlight: "East-facing morning sunlight with garden view" },
-      { name: "Family Media Lounge / Office (0.5 Room)", dimensions: "12' 6\" × 11' 0\"", highlight: "Convertible private boardroom, cigar lounge, or den" },
-      { name: "Children's / Teen Bedroom 4", dimensions: "14' 0\" × 12' 6\"", highlight: "Soundproofed interior wall treatments" },
-      { name: "Island Show Kitchen & Wet Scullery", dimensions: "16' 6\" × 11' 6\"", highlight: "Sub-Zero / Miele provisioned high-end kitchen" },
-      { name: "Wraparound Sunset Sky Terrace", dimensions: "28' 0\" × 8' 0\"", highlight: "Outdoor dining capability for 8 guests" },
-      { name: "Dedicated Staff Quarters", dimensions: "9' 0\" × 6' 6\"", highlight: "Private service access without crossing main foyer" }
+      { name: "Palatial Formal Living & Dining", dimensions: "24'6\" × 15'0\"", highlight: "Expanded entertaining pavilion with 22-ft clear architectural volume" },
+      { name: "Master Presidential Suite", dimensions: "17'0\" × 13'0\"", highlight: "Walk-in wardrobe corridor & lavish marble soaking bathroom" },
+      { name: "Bedroom 2 (Junior Master)", dimensions: "14'0\" × 12'6\"", highlight: "Corner glazing with panoramic sunset view of Balewadi" },
+      { name: "Bedroom 3 Suite", dimensions: "13'0\" × 12'0\"", highlight: "Full en-suite bathroom with Grohe rain shower" },
+      { name: "Bedroom 4", dimensions: "12'6\" × 11'6\"", highlight: "Custom cabinetry provisions & sound-insulated partition" },
+      { name: "0.5 Dedicated Executive Den / Study", dimensions: "11'6\" × 10'0\"", highlight: "Private corner sanctum for remote executive work or media" },
+      { name: "Gourmet Kitchen & Scullery", dimensions: "12'3\" × 11'0\"", highlight: "Attached 7'6\" × 5'7\" Service Dry Balcony & Utility" },
+      { name: "Grand Sunset Sit-Out Deck", dimensions: "19'2\" × 5'0\"", highlight: "96 sq.ft frameless cantilevered glass deck" },
+      { name: "Independent Staff Suite", dimensions: "7'6\" × 6'0\"", highlight: "With separate bathroom and independent service lift access" }
     ],
     specs: [
       "Flooring: Imported Greige Michelangelo Italian Marble",
@@ -348,26 +447,98 @@ export const CONFIGURATIONS = [
     ]
   },
   {
+    id: "type03",
+    name: "Type 03 — Signature & Prive",
+    type: "4.5 BHK Luxury Residences",
+    floors: "4th, 8th, 24th & 28th Floors",
+    carpetArea: 2235,
+    maxCarpetArea: 2246,
+    usableArea: 2580,
+    balconyArea: 189,
+    basePrice: 42000000,
+    priceDisplay: "₹4.20 Cr*",
+    tag: "Typical Floors: 4, 8, 24, 28",
+    floorPlanImage: "./assets/plans/floorplan-type-03-full.webp",
+    unitAImage: "./assets/plans/floorplan-unit-3a.webp",
+    unitBImage: "./assets/plans/floorplan-unit-3b.webp",
+    scheduleCard: "./assets/brochure/schedule-type-03.webp",
+    scheduleTable: "./assets/plans/table-schedule-type-03.webp",
+    overview: "Official Type 03 architectural layout supplied for 4th, 8th, 24th and 28th levels. Designed with optimal alignment to Pune's westerly breeze, offering Type 3A (2,235 sq.ft) and Type 3B (2,246 sq.ft) configurations directly contiguous to the central smart elevator core.",
+    units: [
+      {
+        unit: "Type 03 • 3A (Flat 401)",
+        reraCarpet: "190.11 sq.m (2,046 sq.ft)",
+        enclBalcony: "0 sq.m (0 sq.ft)",
+        dryBalcony: "5.38 sq.m (58 sq.ft)",
+        sitOut: "14.2 sq.m (150 sq.ft)",
+        totalCarpet: "207.64 sq.m (2,235 sq.ft)"
+      },
+      {
+        unit: "Type 03 • 3B (Flat 402)",
+        reraCarpet: "191.39 sq.m (2,060 sq.ft)",
+        enclBalcony: "0 sq.m (0 sq.ft)",
+        dryBalcony: "5.12 sq.m (55 sq.ft)",
+        sitOut: "14.2 sq.m (150 sq.ft)",
+        totalCarpet: "208.62 sq.m (2,246 sq.ft)"
+      }
+    ],
+    rooms: [
+      { name: "Living & Formal Dining Pavilion", dimensions: "24'0\" × 15'0\"", highlight: "Seamless transition to 150 sq.ft expanded viewing balcony" },
+      { name: "Master Presidential Suite", dimensions: "16'0\" × 13'0\"", highlight: "Walk-in wardrobe & ensuite with dual vanities" },
+      { name: "Bedroom 2", dimensions: "14'0\" × 12'0\"", highlight: "Large format windows with cross ventilation" },
+      { name: "Bedroom 3", dimensions: "13'0\" × 11'6\"", highlight: "Attached premium designer bathroom" },
+      { name: "Bedroom 4", dimensions: "12'6\" × 11'0\"", highlight: "Ideal for study, children, or guest suite" },
+      { name: "0.5 Ikigai Flex Lounge", dimensions: "11'0\" × 9'6\"", highlight: "Versatile family relaxation or home theatre nook" },
+      { name: "Show Kitchen + Prep Utility", dimensions: "12'0\" × 11'0\"", highlight: "Separate dry and wet utility zones" },
+      { name: "Expanded Sit-Out Balcony", dimensions: "20'0\" × 7'6\"", highlight: "150 sq.ft expanded terrace for sunset cocktails" },
+      { name: "Servant Quarter with Private Bath", dimensions: "7'0\" × 6'0\"", highlight: "Direct service staircase and elevator access" }
+    ],
+    specs: [
+      "Flooring: 8x4 ft Book-matched Italian Botticino / Statuario Marble",
+      "Bathrooms: Hansgrohe Axor & Kohler Veil sanitary fittings",
+      "HVAC: Centralized Daikin VRV air-conditioning in all zones",
+      "Automation: Crestron/Schneider automated mood lighting & curtain controls",
+      "Security: Multi-tier biometric lock & audio-video touch screen"
+    ]
+  },
+  {
     id: "duplex",
-    name: "Limited Edition Sky Duplex Penthouse",
-    type: "Crown Jewel (Levels 31-33)",
+    name: "Crown Sky Duplex Penthouse",
+    type: "Double-Height Sky Villa (4,385 SQ.FT)",
+    floors: "4th & 5th, 8th & 9th, 28th & 29th, 31st & 32nd Duplex Levels",
     carpetArea: 4385,
+    maxCarpetArea: 4385,
     usableArea: 5120,
-    balconyArea: 580,
+    balconyArea: 480,
     basePrice: 85000000,
     priceDisplay: "₹8.50 Cr*",
-    tag: "Ultra-Bespoke (Only 4 Available)",
-    floorPlanImage: "./assets/floorplans/floorplan-duplex.svg",
-    overview: "An architectural tour de force spanning two complete levels with an internal floating sculptural staircase, private plunge pool, and uninhibited 360° unobstructed Pune skyline views.",
+    tag: "Crown Jewel (4,385 SQ.FT)",
+    floorPlanImage: "./assets/plans/floorplan-duplex-lower.webp",
+    upperPlanImage: "./assets/plans/floorplan-duplex-upper.webp",
+    lowerPlanImage: "./assets/plans/floorplan-duplex-lower.webp",
+    overview: "Official Duplex architectural layout spanning 4,385 sq.ft across two contiguous levels. Connected by an internal sculptural floating staircase with a double-height 30-ft Great Hall, private sky terrace, 5 grand bedroom suites, private library, and dual domestic staff accommodations.",
+    units: [
+      {
+        unit: "Duplex Lower Level (Floors 4, 8, 28)",
+        reraCarpet: "Living, Dining, Kitchen, Guest Suite, Deck, Maid",
+        totalCarpet: "Level 1 Social & Family Pavilion"
+      },
+      {
+        unit: "Duplex Upper Level (Floors 5, 9, 29)",
+        reraCarpet: "Master Suite, Junior Suites, Void, Sky Terrace",
+        totalCarpet: "Level 2 Private Master Sanctuary"
+      }
+    ],
     rooms: [
-      { name: "Double-Height Great Hall", dimensions: "42' 0\" × 24' 0\"", highlight: "30-ft soaring ceilings with monumental chandelier drop" },
-      { name: "Private Sky Plunge Pool & Sun Deck", dimensions: "32' 0\" × 14' 0\"", highlight: "Infinity glass edge overlooking the western horizon" },
-      { name: "Master Presidential Wing (Entire Level)", dimensions: "26' 0\" × 20' 0\"", highlight: "Private steam room, dual walk-in boutiques" },
-      { name: "4 En-Suite Luxury Bedrooms", dimensions: "Various (16' to 20')", highlight: "Each room with private cantilevered glass balcony" },
-      { name: "Private Wine Cellar & Tasting Salon", dimensions: "14' 0\" × 12' 0\"", highlight: "Climate-controlled custom cabinetry" },
-      { name: "Personal Fitness & Yoga Studio", dimensions: "18' 0\" × 12' 6\"", highlight: "Sound-damped acoustic rubber and mirror walls" },
-      { name: "Chef's Commercial Prep Kitchen + Pantry", dimensions: "20' 0\" × 14' 0\"", highlight: "Heavy-duty exhaust and dedicated butler station" },
-      { name: "Dual Staff Quarters (Maid & Chauffeur)", dimensions: "16' 0\" × 8' 0\"", highlight: "Complete independent dual staff accommodations" }
+      { name: "30-Ft Monumental Great Hall", dimensions: "38'0\" × 22'0\"", highlight: "Monumental double-height volume with glass atrium" },
+      { name: "Master Penthouse Suite (Upper Level)", dimensions: "24'0\" × 18'0\"", highlight: "Spanning the upper wing with private terrace & spa bath" },
+      { name: "Internal Floating Sculptural Staircase", dimensions: "Architectural Feature", highlight: "Bespoke brass and timber floating spiral stair" },
+      { name: "Junior Master Suite 2", dimensions: "18'0\" × 14'0\"", highlight: "With cantilevered sunset viewing balcony" },
+      { name: "Bedroom Suites 3, 4 & 5", dimensions: "16'0\" × 13'0\" each", highlight: "All with en-suite walk-in dressing and designer baths" },
+      { name: "Private Wine Cellar / Cigar Salon", dimensions: "14'0\" × 11'0\"", highlight: "Custom temperature-controlled tasting lounge" },
+      { name: "Gourmet Island Kitchen & Butler Pantry", dimensions: "18'0\" × 12'0\"", highlight: "Complete commercial prep and show kitchen" },
+      { name: "Private Sky Sundeck", dimensions: "28'0\" × 10'0\"", highlight: "Unobstructed 270° views over Pune West skyline" },
+      { name: "Dual Staff Accommodations", dimensions: "16'0\" × 8'0\"", highlight: "Separate driver and domestic maid rooms with bath" }
     ],
     specs: [
       "Private High-Speed Elevator stopping directly inside duplex foyer",
