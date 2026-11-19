@@ -32,7 +32,7 @@ export default function Navbar({ onOpenVisitModal }) {
           
           {/* Official Kundan Logo & Arvaana Crest */}
           <a 
-            href={getCleanUrl('kundan-arvaana-balewadi')}
+            href={getCleanUrl('')}
             onClick={(e) => handleLinkClick(e, SEO_ROUTES[0])}
             className="flex items-center gap-3 group shrink-0"
           >

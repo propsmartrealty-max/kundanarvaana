@@ -65,7 +65,7 @@ export default function Footer({ onOpenVisitModal }) {
             <ul className="space-y-2 text-xs">
               <li>
                 <a 
-                  href={getCleanUrl('kundan-arvaana-balewadi')} 
+                  href={getCleanUrl('')} 
                   onClick={(e) => handleLinkClick(e, 'overview')}
                   className="hover:text-gold-300 transition-colors"
                 >

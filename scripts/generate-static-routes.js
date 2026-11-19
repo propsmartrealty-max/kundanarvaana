@@ -3,11 +3,6 @@ import path from 'path';
 
 const routes = [
   {
-    path: "kundan-arvaana-balewadi",
-    title: "Kundan Arvaana Balewadi, Pune | 4 & 4.5 BHK Luxury Residences | MahaRERA PR1260002600277",
-    desc: "Kundan Arvaana Balewadi: India's 1st Ikigai-inspired luxury landmark in Balewadi, Pune West. 66 bespoke 4.5 BHK residences across 33 soaring levels. MahaRERA: PR1260002600277."
-  },
-  {
     path: "kundan-arvaana-tower-balewadi",
     title: "33-Storey Landmark Tower Specifications | Kundan Arvaana Balewadi, Pune",
     desc: "Explore the 33-storey architectural engineering of Kundan Arvaana in Balewadi, Pune. Only 2 residences per floor with 4 private high-speed elevators."

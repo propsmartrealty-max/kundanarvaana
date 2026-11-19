@@ -7,8 +7,8 @@
 export const SEO_ROUTES = [
   {
     slug: "overview",
-    path: "kundan-arvaana-balewadi",
-    targetId: "philosophy",
+    path: "",
+    targetId: "hero",
     label: "Overview",
     pageTitle: "Kundan Arvaana Balewadi, Pune | 4 & 4.5 BHK Luxury Residences | MahaRERA PR1260002600277",
     metaDesc: "Kundan Arvaana Balewadi: India's 1st Ikigai-inspired luxury landmark in Balewadi, Pune West. 66 bespoke 4.5 BHK residences across 33 soaring levels."
@@ -111,9 +111,25 @@ export function getCleanUrl(pathSlug) {
 
 /**
  * Smoothly scrolls to target element and updates browser address bar with clean SEO URL without '#'.
+ * Home page stays as bare domain (no extended URL).
  */
 export function navigateToRoute(route, pushState = true) {
   if (typeof window === 'undefined') return;
+
+  if (!route.path || route.slug === "overview") {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    const rootUrl = getBaseHref();
+    if (pushState && window.location.pathname !== rootUrl) {
+      window.history.pushState({ targetId: 'hero', slug: 'overview' }, route.pageTitle, rootUrl);
+    }
+    if (route.pageTitle) {
+      document.title = route.pageTitle;
+    }
+    return;
+  }
 
   const target = document.getElementById(route.targetId);
   if (target) {
@@ -140,19 +156,20 @@ export function navigateToRoute(route, pushState = true) {
 
 /**
  * Parses current location pathname and activates the corresponding section on initial load or popstate.
+ * If user is on home page (/), remains purely as domain without any extended URL.
  */
 export function handleInitialRouting() {
   if (typeof window === 'undefined') return;
 
   const pathname = window.location.pathname;
-  const matchedRoute = SEO_ROUTES.find(r => pathname.includes(r.path));
+  const matchedRoute = SEO_ROUTES.find(r => r.path && r.path.length > 0 && pathname.includes(r.path));
 
   if (matchedRoute) {
     setTimeout(() => {
       navigateToRoute(matchedRoute, false);
     }, 200);
   } else if (window.location.hash) {
-    // If a legacy hash exists, migrate immediately to clean SEO path without '#'
+    // If a legacy hash exists, migrate immediately without '#'
     const rawHash = window.location.hash.replace('#', '');
     const hashRoute = SEO_ROUTES.find(r => r.targetId === rawHash || r.slug === rawHash);
     if (hashRoute) {
