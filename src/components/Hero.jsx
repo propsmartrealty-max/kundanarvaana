@@ -77,13 +77,13 @@ export default function Hero({ onOpenVisitModal, onExploreTower, onExploreReside
 
           {/* Right: Key Architectural Visual Box */}
           <div className="lg:col-span-5 relative group">
-            <div className="relative rounded-3xl overflow-hidden border-2 border-gold-400/50 shadow-2xl bg-black aspect-[4/3] group-hover:border-gold-300 transition-all">
+            <div className="relative rounded-3xl overflow-hidden border-2 border-gold-400/50 shadow-2xl bg-black aspect-square sm:aspect-[4/5] max-h-[540px] mx-auto group-hover:border-gold-300 transition-all">
               <img
                 src={PROJECT_INFO.officialHeroImage}
                 alt="Kundan Arvaana Architectural Landmark Elevation"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-transparent opacity-80" />
+              <div className="absolute inset-0 bg-gradient-to-t from-obsidian-950/90 via-transparent to-transparent opacity-80" />
 
               {/* Verified Visual Pill */}
               <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-gold-400/50 text-[10px] uppercase font-bold text-gold-300 flex items-center gap-1.5 shadow-xl">
