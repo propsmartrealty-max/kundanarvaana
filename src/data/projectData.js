@@ -25,6 +25,9 @@ export const PROJECT_INFO = {
   elevationMonochrome: "./assets/plans/elevation-architectural-monochrome.webp",
   elevationEditorial: "./assets/brochure/elevation-editorial-full.webp",
   mapEmbedUrl: "https://maps.google.com/maps?q=Arvaana%2C%20Balewadi%2C%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed",
+  contactPhone: "+91 77440 09295",
+  whatsAppNumber: "917744009295",
+  contactEmail: "propsmartrealty@gmail.com",
 };
 
 export const KUNDAN_ORIGINAL_PROJECTS = [

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CONFIGURATIONS } from '../data/projectData';
-import { Maximize2, BedDouble, Bath, Car, Sparkles, Check, ArrowRight, Download, SlidersHorizontal, Table, Eye, Layers } from 'lucide-react';
+import { Maximize2, BedDouble, Bath, Car, Sparkles, Check, ArrowRight, Download, SlidersHorizontal, Table, Eye, Layers, MessageSquare } from 'lucide-react';
 
 export default function ResidenceConfigurator({ onOpenVisitModal, onOpenDossierModal, onOpenCalculator }) {
   const [selectedConfigIdx, setSelectedConfigIdx] = useState(0);
@@ -216,13 +216,15 @@ export default function ResidenceConfigurator({ onOpenVisitModal, onOpenDossierM
                   <Download className="w-3.5 h-3.5" />
                   <span>Download Blueprint Image</span>
                 </a>
-                <button
-                  onClick={onOpenDossierModal}
-                  className="px-4 py-2 rounded-xl text-xs font-medium border border-white/10 text-champagne hover:border-white/20 transition-colors flex items-center gap-2"
+                <a
+                  href="https://wa.me/917744009295?text=Hi%20Propsmart%20Realty%2C%20please%20share%20the%20detailed%20CAD%20floor%20plans%20and%20specifications%20for%20Kundan%20Arvaana%20Balewadi."
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-4 py-2 rounded-xl text-xs font-semibold border border-emerald-500/40 bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20 transition-colors flex items-center gap-2"
                 >
-                  <SlidersHorizontal className="w-3.5 h-3.5 text-gold-400" />
-                  <span>Request Full RERA Dossier</span>
-                </button>
+                  <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>WhatsApp Floor Plans</span>
+                </a>
               </div>
             </div>
 

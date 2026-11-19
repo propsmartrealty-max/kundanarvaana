@@ -17,6 +17,7 @@ import DeveloperStory from './components/DeveloperStory';
 import Footer from './components/Footer';
 import VipDossierModal from './components/VipDossierModal';
 import SiteVisitModal from './components/SiteVisitModal';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 import { handleInitialRouting } from './utils/seoRouter';
 
 export default function App() {
@@ -132,6 +133,9 @@ export default function App() {
         isOpen={isVisitModalOpen}
         onClose={handleCloseVisit}
       />
+
+      {/* Persistent WhatsApp Enquiry Concierge (+91 77440 09295) */}
+      <FloatingWhatsApp />
     </div>
   );
 }

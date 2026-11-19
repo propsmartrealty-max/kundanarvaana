@@ -185,12 +185,24 @@ export default function Footer({ onOpenVisitModal }) {
                 <span>Near Sai Chowk, Balewadi, Pune West, Maharashtra 411045</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-gold-400 shrink-0" />
-                <span>+91 81476 48490 / 020 6700 0000</span>
+                <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
+                <a 
+                  href="https://wa.me/917744009295?text=Hi%20Propsmart%20Realty%2C%20I%20am%20interested%20in%20Kundan%20Arvaana%20Balewadi." 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="hover:text-emerald-300 font-semibold transition-colors"
+                >
+                  +91 77440 09295 (WhatsApp / Direct)
+                </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-gold-400 shrink-0" />
-                <span>arvaana@kundans.com</span>
+                <a 
+                  href="mailto:propsmartrealty@gmail.com" 
+                  className="hover:text-gold-300 transition-colors"
+                >
+                  propsmartrealty@gmail.com
+                </a>
               </div>
             </div>
 

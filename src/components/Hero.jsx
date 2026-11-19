@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, ShieldCheck, Sparkles, Building2, Eye, KeyRound, Image as ImageIcon } from 'lucide-react';
+import { ArrowUpRight, ShieldCheck, Sparkles, Building2, Eye, KeyRound, Image as ImageIcon, MessageSquare } from 'lucide-react';
 import { PROJECT_INFO } from '../data/projectData';
 import { SEO_ROUTES, navigateToRoute, getCleanUrl } from '../utils/seoRouter';
 
@@ -66,6 +66,16 @@ export default function Hero({ onOpenVisitModal, onExploreTower, onExploreReside
                 <span>Book VIP Private Tour</span>
                 <ArrowUpRight className="w-4 h-4" />
               </button>
+
+              <a
+                href="https://wa.me/917744009295?text=Hi%20Propsmart%20Realty%2C%20please%20share%20the%20brochure%2C%20floor%20plans%20and%20pricing%20for%20Kundan%20Arvaana%20Balewadi."
+                target="_blank"
+                rel="noreferrer"
+                className="w-full sm:w-auto px-5 py-3 rounded-full bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-400/50 text-emerald-300 font-semibold text-xs tracking-wider uppercase backdrop-blur-md transition-all flex items-center justify-center gap-2"
+              >
+                <MessageSquare className="w-4 h-4 text-emerald-400" />
+                <span>WhatsApp Enquiry</span>
+              </a>
 
               <button
                 onClick={(e) => handleRouteClick(e, towerRoute)}

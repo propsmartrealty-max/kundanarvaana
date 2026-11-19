@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, Menu, X } from 'lucide-react';
+import { Calendar, Menu, X, MessageSquare } from 'lucide-react';
 import { PROJECT_INFO } from '../data/projectData';
 import { SEO_ROUTES, navigateToRoute, getCleanUrl } from '../utils/seoRouter';
 
@@ -68,10 +68,21 @@ export default function Navbar({ onOpenVisitModal }) {
           </div>
 
           {/* Action CTA */}
-          <div className="hidden md:flex items-center shrink-0">
+          <div className="hidden md:flex items-center gap-2.5 shrink-0">
+            <a
+              href="https://wa.me/917744009295?text=Hi%20Propsmart%20Realty%2C%20I%20am%20interested%20in%20Kundan%20Arvaana%20Balewadi."
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-emerald-300 text-[11px] font-semibold tracking-wider hover:bg-emerald-500/20 transition-all shadow-sm"
+              title="Chat on WhatsApp"
+            >
+              <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
+              <span>WhatsApp</span>
+            </a>
+
             <button
               onClick={onOpenVisitModal}
-              className="relative group overflow-hidden px-4.5 py-2 rounded-full text-[11px] font-bold tracking-wider uppercase bg-gradient-to-r from-gold-600 via-gold-400 to-gold-600 text-obsidian-950 shadow-lg shadow-gold-500/25 hover:shadow-gold-500/40 transition-all hover:scale-[1.02] flex items-center gap-2"
+              className="relative group overflow-hidden px-4 py-2 rounded-full text-[11px] font-bold tracking-wider uppercase bg-gradient-to-r from-gold-600 via-gold-400 to-gold-600 text-obsidian-950 shadow-lg shadow-gold-500/25 hover:shadow-gold-500/40 transition-all hover:scale-[1.02] flex items-center gap-1.5"
             >
               <Calendar className="w-3.5 h-3.5 text-obsidian-950" />
               <span>Schedule Visit</span>

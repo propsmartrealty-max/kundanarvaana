@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CONFIGURATIONS } from '../data/projectData';
-import { Calculator, IndianRupee, ShieldCheck, Download, Calendar } from 'lucide-react';
+import { Calculator, IndianRupee, ShieldCheck, Download, Calendar, MessageSquare } from 'lucide-react';
 
 export default function InvestmentCalculator({ onOpenVisitModal, onOpenDossierModal }) {
   const [selectedConfigIdx, setSelectedConfigIdx] = useState(0);
@@ -263,13 +263,23 @@ export default function InvestmentCalculator({ onOpenVisitModal, onOpenDossierMo
             </div>
 
             {/* Action CTA */}
-            <div className="pt-6 mt-6 border-t border-white/10">
+            <div className="pt-6 mt-6 border-t border-white/10 flex flex-col sm:flex-row gap-3">
+              <a
+                href="https://wa.me/917744009295?text=Hi%20Propsmart%20Realty%2C%20please%20send%20the%20all-inclusive%20cost%20sheet%20and%20bank%20loan%20offers%20for%20Kundan%20Arvaana%20Balewadi%20to%20my%20WhatsApp."
+                target="_blank"
+                rel="noreferrer"
+                className="flex-1 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-obsidian-950 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 text-center"
+              >
+                <MessageSquare className="w-4 h-4 text-obsidian-950" />
+                <span>WhatsApp Cost Sheet</span>
+              </a>
+
               <button
                 onClick={onOpenVisitModal}
-                className="w-full py-3.5 rounded-xl bg-gold-400 hover:bg-gold-300 text-obsidian-950 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-gold-500/20"
+                className="flex-1 py-3.5 rounded-xl bg-gold-400 hover:bg-gold-300 text-obsidian-950 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-gold-500/20 text-center"
               >
                 <Calendar className="w-4 h-4" />
-                <span>Discuss Tailored Payment Plans with Concierge</span>
+                <span>Schedule VIP Viewing</span>
               </button>
             </div>
 
