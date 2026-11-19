@@ -48,6 +48,11 @@
     <meta name="twitter:image" content="https://propsmartrealty-max.github.io/kundanarvaana/assets/hero/kundan-arvaana-hero.webp" />
     <meta name="twitter:image:alt" content="Kundan Arvaana Landmark Tower in Balewadi, Pune" />
 
+    <!-- Cache Control & Anti-Stale Directives -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     <!-- Favicon & Touch Icons -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23CCAA4B'><path d='M12 2L2 22h20L12 2zm0 4.5l6.5 13H5.5L12 6.5z'/></svg>" />
     <link rel="apple-touch-icon" href="https://propsmartrealty-max.github.io/kundanarvaana/assets/kundans/apple-touch-icon.png" />
@@ -279,7 +284,13 @@
     </style>
   </head>
   <body class="bg-obsidian-950 text-champagne antialiased selection:bg-gold-500 selection:text-black">
-    <div id="root"></div>
+    <div id="root">
+      <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #07090C; color: #B8932C; font-family: 'Cinzel', serif;">
+        <div style="font-size: 26px; letter-spacing: 0.25em; font-weight: bold; margin-bottom: 6px; text-shadow: 0 0 20px rgba(184,147,44,0.4);">ARVAANA</div>
+        <div style="font-size: 10px; letter-spacing: 0.35em; color: #F5DE98; font-weight: 600;">BALEWADI • PUNE</div>
+        <div style="margin-top: 24px; width: 64px; height: 2px; background: linear-gradient(90deg, transparent, #B8932C, #F5DE98, #B8932C, transparent);"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
