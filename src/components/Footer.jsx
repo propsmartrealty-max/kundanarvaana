@@ -45,12 +45,6 @@ export default function Footer({ onOpenVisitModal, onOpenDossierModal }) {
               >
                 Schedule Private Viewing
               </button>
-              <button
-                onClick={onOpenDossierModal}
-                className="px-4 py-2 rounded-full border border-gold-400/40 text-gold-300 hover:bg-gold-500/10 font-semibold text-[11px] uppercase tracking-wider transition-colors"
-              >
-                VIP Dossier
-              </button>
             </div>
           </div>
 

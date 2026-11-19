@@ -39,10 +39,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-obsidian-950 text-champagne selection:bg-gold-500 selection:text-black">
-      {/* Navigation with official Kundan Spaces Logo */}
+      {/* Clean Navigation with official Kundan Spaces Logo */}
       <Navbar
         onOpenVisitModal={handleOpenVisit}
-        onOpenDossierModal={handleOpenDossier}
       />
 
       {/* Hero Section with Official Key Render */}
