@@ -73,11 +73,13 @@ routes.forEach(route => {
   customHtml = customHtml.replace(/<meta property="og:description" content=".*?" \/>/s, `<meta property="og:description" content="${route.desc}" />`);
   customHtml = customHtml.replace(/<meta name="twitter:description" content=".*?" \/>/s, `<meta name="twitter:description" content="${route.desc}" />`);
   
-  // Update Canonical
-  const canonicalUrl = `https://kundanarvaana.pages.dev/${route.path}`;
+  // Update Canonical for Custom Domain
+  const canonicalUrl = `https://kundanarvaana.in/${route.path}`;
+  const wwwUrl = `https://www.kundanarvaana.in/${route.path}`;
   customHtml = customHtml.replace(/<link rel="canonical" href=".*?" \/>/s, `<link rel="canonical" href="${canonicalUrl}" />`);
   customHtml = customHtml.replace(/<link rel="alternate" hreflang="en-IN" href=".*?" \/>/s, `<link rel="alternate" hreflang="en-IN" href="${canonicalUrl}" />`);
   customHtml = customHtml.replace(/<link rel="alternate" hreflang="x-default" href=".*?" \/>/s, `<link rel="alternate" hreflang="x-default" href="${canonicalUrl}" />`);
+  customHtml = customHtml.replace(/<link rel="alternate" hreflang="en" href=".*?" \/>/s, `<link rel="alternate" hreflang="en" href="${wwwUrl}" />`);
   customHtml = customHtml.replace(/<meta property="og:url" content=".*?" \/>/s, `<meta property="og:url" content="${canonicalUrl}" />`);
 
   // Target directory in dist/

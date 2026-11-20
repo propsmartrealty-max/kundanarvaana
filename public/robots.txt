@@ -112,8 +112,9 @@ Disallow: /.git
 Disallow: /node_modules
 
 # ------------------------------------------------------------------------------
-# SITEMAPS & CANONICAL HOST
+# SITEMAPS & CANONICAL CUSTOM DOMAIN HOST
 # ------------------------------------------------------------------------------
+Sitemap: https://kundanarvaana.in/sitemap.xml
+Sitemap: https://www.kundanarvaana.in/sitemap.xml
 Sitemap: https://kundanarvaana.pages.dev/sitemap.xml
-Sitemap: https://propsmartrealty-max.github.io/kundanarvaana/sitemap.xml
-Host: https://kundanarvaana.pages.dev
+Host: https://kundanarvaana.in
