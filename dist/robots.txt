@@ -1,4 +1,119 @@
+# ==============================================================================
+# DIGITAL FORTRESS: ROBOTS CONFIGURATION FOR KUNDAN ARVAANA, BALEWADI, PUNE
+# Strict Whitelisting of Verified Search Engines & Image Crawlers
+# Blocklist for Abusive Harvesters & Vulnerability Scanners
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. GOOGLEBOT ECOSYSTEM (PRIORITY INDEXING, RICH RESULTS & IMAGE SEARCH)
+# ------------------------------------------------------------------------------
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-Mobile
+User-agent: Googlebot-News
+User-agent: Google-InspectionTool
+User-agent: Storebot-Google
+User-agent: Google-Search-Console
+User-agent: GoogleOther
+Allow: /
+Allow: /kundan-arvaana-*
+Allow: /assets/
+Allow: /*.html$
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.webp$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.svg$
+Disallow: /scratch/
+Disallow: /temp/
+Disallow: /api/
+Disallow: /wp-*
+Disallow: /admin
+Disallow: /.git
+Disallow: /*?*
+
+# ------------------------------------------------------------------------------
+# 2. MICROSOFT BING & YAHOO SEARCH
+# ------------------------------------------------------------------------------
+User-agent: Bingbot
+User-agent: msnbot
+User-agent: BingPreview
+Allow: /
+Allow: /kundan-arvaana-*
+Allow: /assets/
+Disallow: /scratch/
+Disallow: /temp/
+
+# ------------------------------------------------------------------------------
+# 3. APPLE SEARCH & SIRI INTELLIGENCE
+# ------------------------------------------------------------------------------
+User-agent: Applebot
+User-agent: Applebot-Extended
+Allow: /
+Allow: /kundan-arvaana-*
+Allow: /assets/
+
+# ------------------------------------------------------------------------------
+# 4. GLOBAL VERIFIED SEARCH ENGINES
+# ------------------------------------------------------------------------------
+User-agent: DuckDuckBot
+User-agent: YandexBot
+User-agent: Baiduspider
+User-agent: Sogou
+Allow: /
+Allow: /kundan-arvaana-*
+Allow: /assets/
+
+# ------------------------------------------------------------------------------
+# 5. SOCIAL MEDIA & MESSAGING RICH LINK UNFURLEDS (WHATSAPP, TWITTER, META)
+# ------------------------------------------------------------------------------
+User-agent: Twitterbot
+User-agent: facebookexternalhit
+User-agent: WhatsApp
+User-agent: TelegramBot
+User-agent: LinkedInBot
+User-agent: Pinterestbot
+User-agent: Slackbot
+Allow: /
+Allow: /assets/
+
+# ------------------------------------------------------------------------------
+# 6. DIGITAL FORTRESS BLOCKLIST: AGGRESSIVE SCRAPERS & PROBE BOTS
+# ------------------------------------------------------------------------------
+User-agent: SemrushBot
+User-agent: SemrushBot-SA
+User-agent: AhrefsBot
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: PetalBot
+User-agent: DataForSeoBot
+User-agent: Bytespider
+User-agent: ZoominfoBot
+User-agent: BLEXBot
+User-agent: MegaIndex.ru
+User-agent: SeznamBot
+User-agent: Sogou web spider
+User-agent: CCBot
+Disallow: /
+
+# ------------------------------------------------------------------------------
+# 7. DEFAULT CRAWLER DIRECTIVE
+# ------------------------------------------------------------------------------
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /kundan-arvaana-*
+Disallow: /scratch/
+Disallow: /temp/
+Disallow: /admin
+Disallow: /.git
+Disallow: /node_modules
 
+# ------------------------------------------------------------------------------
+# SITEMAPS & CANONICAL HOST
+# ------------------------------------------------------------------------------
+Sitemap: https://kundanarvaana.pages.dev/sitemap.xml
 Sitemap: https://propsmartrealty-max.github.io/kundanarvaana/sitemap.xml
+Host: https://kundanarvaana.pages.dev
