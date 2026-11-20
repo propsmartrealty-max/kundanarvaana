@@ -113,19 +113,19 @@ export default function FloatingWhatsApp() {
       {/* Primary Floating Trigger Pill */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex items-center gap-2.5 px-4 py-3 rounded-full bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-white shadow-2xl shadow-emerald-950/80 hover:shadow-emerald-500/40 border border-emerald-400/50 backdrop-blur-md transition-all duration-300 hover:scale-105"
+        className="group relative flex items-center gap-2 px-3.5 py-2 rounded-full bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-white shadow-xl shadow-emerald-950/70 hover:shadow-emerald-500/40 border border-emerald-400/50 backdrop-blur-md transition-all duration-300 hover:scale-105"
         aria-label="Open WhatsApp Concierge"
       >
         <div className="relative">
-          <MessageSquare className="w-5 h-5 text-white" />
-          <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-300 rounded-full border-2 border-emerald-700 animate-ping"></span>
-          <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-300 rounded-full border-2 border-emerald-700"></span>
+          <MessageSquare className="w-4 h-4 text-white" />
+          <span className="absolute -top-1 -right-1 w-2 h-2 bg-emerald-300 rounded-full border-2 border-emerald-700 animate-ping"></span>
+          <span className="absolute -top-1 -right-1 w-2 h-2 bg-emerald-300 rounded-full border-2 border-emerald-700"></span>
         </div>
-        <div className="flex items-center gap-2">
-          <span className="text-xs font-bold tracking-wider uppercase leading-none">
+        <div className="flex items-center gap-1.5">
+          <span className="text-[11px] font-bold tracking-wider uppercase leading-none">
             WhatsApp
           </span>
-          <span className="px-1.5 py-0.5 rounded-full bg-black/25 text-[9px] font-medium text-emerald-100 uppercase tracking-widest border border-emerald-400/30">
+          <span className="px-1.5 py-0.5 rounded-full bg-black/30 text-[8px] font-semibold text-emerald-200 uppercase tracking-wider border border-emerald-400/30">
             Online
           </span>
         </div>

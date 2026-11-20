@@ -240,21 +240,21 @@ export default function MasterPlanSection({ onOpenVisitModal, onOpenDossierModal
               </div>
 
               {/* Action Buttons */}
-              <div className="pt-6 mt-6 border-t border-white/10 flex flex-col gap-2.5">
+              <div className="pt-6 mt-6 border-t border-white/10 flex flex-wrap items-center gap-2.5">
                 <a
                   href="https://wa.me/917744009295?text=Hello%2C%20I%20am%20interested%20in%20Kundan%20Arvaana%20Balewadi.%20Please%20share%20the%20high-resolution%20Master%20Site%20Layout%20and%2034th%20Floor%20Amenity%20blueprints."
                   target="_blank"
                   rel="noreferrer"
-                  className="w-full py-3 rounded-xl border border-emerald-500/50 bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20 text-xs font-semibold uppercase tracking-wider transition-colors flex items-center justify-center gap-2"
+                  className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl border border-emerald-500/50 bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20 text-xs font-semibold uppercase tracking-wider transition-colors"
                 >
                   <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
-                  <span>WhatsApp CAD Blueprints</span>
+                  <span>WhatsApp Plans</span>
                 </a>
                 <button
                   onClick={onOpenVisitModal}
-                  className="w-full py-3 rounded-xl bg-gold-400 hover:bg-gold-300 text-obsidian-950 font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-gold-500/20"
+                  className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-xl bg-gold-400 hover:bg-gold-300 text-obsidian-950 font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-gold-500/20"
                 >
-                  Reserve Private Architecture Tour
+                  Schedule Tour
                 </button>
               </div>
 

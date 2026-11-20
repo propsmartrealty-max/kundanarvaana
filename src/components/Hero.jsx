@@ -58,37 +58,37 @@ export default function Hero({ onOpenVisitModal, onExploreTower, onExploreReside
             </p>
 
             {/* Action CTAs */}
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 mb-8">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3 mb-8">
               <button
                 onClick={onOpenVisitModal}
-                className="w-full sm:w-auto px-7 py-3 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-500 text-obsidian-950 font-bold text-xs tracking-widest uppercase shadow-xl shadow-gold-500/30 hover:scale-105 transition-all flex items-center justify-center gap-2"
+                className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-500 text-obsidian-950 font-bold text-xs tracking-wider uppercase shadow-lg shadow-gold-500/25 hover:scale-105 transition-all"
               >
-                <span>Book VIP Private Tour</span>
-                <ArrowUpRight className="w-4 h-4" />
+                <span>Book VIP Tour</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
               </button>
 
               <a
                 href="https://wa.me/917744009295?text=Hello%2C%20I%20am%20interested%20in%20Kundan%20Arvaana%20Balewadi.%20Please%20share%20the%20brochure%2C%20floor%20plans%20and%20pricing."
                 target="_blank"
                 rel="noreferrer"
-                className="w-full sm:w-auto px-5 py-3 rounded-full bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-400/50 text-emerald-300 font-semibold text-xs tracking-wider uppercase backdrop-blur-md transition-all flex items-center justify-center gap-2"
+                className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-full bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-400/50 text-emerald-300 font-semibold text-xs tracking-wider uppercase backdrop-blur-md transition-all"
               >
-                <MessageSquare className="w-4 h-4 text-emerald-400" />
-                <span>WhatsApp Enquiry</span>
+                <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
+                <span>WhatsApp</span>
               </a>
 
               <button
                 onClick={(e) => handleRouteClick(e, towerRoute)}
-                className="w-full sm:w-auto px-6 py-3 rounded-full border border-gold-400/40 bg-obsidian-900/60 hover:bg-gold-500/10 text-gold-200 font-semibold text-xs tracking-wider uppercase backdrop-blur-md transition-all flex items-center justify-center gap-2"
+                className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-full border border-gold-400/30 bg-obsidian-900/60 hover:bg-gold-500/10 text-gold-200 font-semibold text-xs tracking-wider uppercase backdrop-blur-md transition-all"
               >
-                <Building2 className="w-4 h-4 text-gold-400" />
+                <Building2 className="w-3.5 h-3.5 text-gold-400" />
                 <span>33-Floor Tower</span>
               </button>
 
               <a
                 href={getCleanUrl('kundan-arvaana-master-plan-floor-plans')}
                 onClick={(e) => handleRouteClick(e, masterPlanRoute)}
-                className="w-full sm:w-auto px-6 py-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-champagne font-semibold text-xs tracking-wider uppercase backdrop-blur-md transition-all flex items-center justify-center gap-2"
+                className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-champagne font-semibold text-xs tracking-wider uppercase backdrop-blur-md transition-all"
               >
                 <span>Master Blueprints</span>
               </a>
