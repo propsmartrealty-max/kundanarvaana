@@ -55,7 +55,7 @@ export default function SiteVisitModal({ isOpen, onClose }) {
 
   const openWhatsAppConcierge = () => {
     const text = encodeURIComponent(
-      `Hello Propsmart Realty, I have requested a VIP site visit for Kundan Arvaana, Balewadi (MahaRERA: ${PROJECT_INFO.mahaRera}).\n\nName: ${name || 'Prospective Resident'}\nPhone: ${phone}\nEmail: ${email || 'Not provided'}\nPreferred Date: ${date || 'Earliest Slot'}\nSlot: ${timeSlot}\n\nPlease share the brochure, CAD layouts & confirm my VIP viewing.`
+      `Hello, I have requested a VIP site visit for Kundan Arvaana, Balewadi (MahaRERA: ${PROJECT_INFO.mahaRera}).\n\nProject: Kundan Arvaana\nName: ${name || 'Prospective Resident'}\nPhone: ${phone}\nEmail: ${email || 'Not provided'}\nPreferred Date: ${date || 'Earliest Slot'}\nSlot: ${timeSlot}\n\nPlease share the brochure, CAD layouts & confirm my VIP viewing.`
     );
     window.open(`https://wa.me/${targetWhatsApp}?text=${text}`, '_blank');
   };
@@ -68,7 +68,7 @@ export default function SiteVisitModal({ isOpen, onClose }) {
         <div className="p-6 border-b border-white/10 flex items-center justify-between bg-obsidian-900/60">
           <div>
             <div className="text-[10px] uppercase tracking-widest text-gold-400 font-semibold">
-              PROPSMART REALTY • OFFICIAL DESK
+              KUNDAN ARVAANA • OFFICIAL SALES DESK
             </div>
             <h3 className="font-serif text-lg font-bold text-white">
               Schedule Your Private VIP Viewing
@@ -213,7 +213,7 @@ export default function SiteVisitModal({ isOpen, onClose }) {
                   {isSubmitting ? (
                     <>
                       <Loader2 className="w-4 h-4 animate-spin text-obsidian-950" />
-                      <span>Sending to Propsmart Realty...</span>
+                      <span>Confirming Appointment Request...</span>
                     </>
                   ) : (
                     <span>Confirm VIP Appointment</span>
@@ -228,7 +228,7 @@ export default function SiteVisitModal({ isOpen, onClose }) {
                   className="inline-flex items-center gap-2 text-xs text-emerald-400 hover:text-emerald-300 font-medium"
                 >
                   <MessageSquare className="w-3.5 h-3.5" />
-                  <span>Instant WhatsApp to +91 77440 09295</span>
+                  <span>Instant WhatsApp Assistance</span>
                 </button>
               </div>
             </form>
@@ -241,7 +241,7 @@ export default function SiteVisitModal({ isOpen, onClose }) {
                 VIP Reservation Received
               </h4>
               <p className="text-xs sm:text-sm text-champagne/80 max-w-sm mx-auto leading-relaxed">
-                Thank you, <strong className="text-white">{name || 'Distinguished Guest'}</strong>. Your appointment request has been transmitted directly to Propsmart Realty (<span className="text-gold-300">propsmartrealty@gmail.com</span>).
+                Thank you, <strong className="text-white">{name || 'Distinguished Guest'}</strong>. Your appointment request for Kundan Arvaana has been confirmed. Our project advisory team will connect with you shortly.
               </p>
               
               <div className="p-4 rounded-xl bg-obsidian-900 border border-white/10 text-xs text-left max-w-sm mx-auto space-y-1.5 font-mono">
@@ -256,7 +256,7 @@ export default function SiteVisitModal({ isOpen, onClose }) {
                   className="w-full py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-obsidian-950 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20"
                 >
                   <MessageSquare className="w-4 h-4 text-obsidian-950" />
-                  <span>Confirm Instantly on WhatsApp (+91 77440 09295)</span>
+                  <span>Confirm Instantly on WhatsApp</span>
                 </button>
 
                 <button

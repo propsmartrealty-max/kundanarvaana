@@ -217,7 +217,7 @@ export default function ResidenceConfigurator({ onOpenVisitModal, onOpenDossierM
                   <span>Download Blueprint Image</span>
                 </a>
                 <a
-                  href="https://wa.me/917744009295?text=Hi%20Propsmart%20Realty%2C%20please%20share%20the%20detailed%20CAD%20floor%20plans%20and%20specifications%20for%20Kundan%20Arvaana%20Balewadi."
+                  href="https://wa.me/917744009295?text=Hello%2C%20I%20am%20interested%20in%20Kundan%20Arvaana%20Balewadi.%20Please%20share%20the%20detailed%20CAD%20floor%20plans%20and%20specifications."
                   target="_blank"
                   rel="noreferrer"
                   className="px-4 py-2 rounded-xl text-xs font-semibold border border-emerald-500/40 bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20 transition-colors flex items-center gap-2"

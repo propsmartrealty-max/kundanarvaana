@@ -68,7 +68,7 @@ export default function Hero({ onOpenVisitModal, onExploreTower, onExploreReside
               </button>
 
               <a
-                href="https://wa.me/917744009295?text=Hi%20Propsmart%20Realty%2C%20please%20share%20the%20brochure%2C%20floor%20plans%20and%20pricing%20for%20Kundan%20Arvaana%20Balewadi."
+                href="https://wa.me/917744009295?text=Hello%2C%20I%20am%20interested%20in%20Kundan%20Arvaana%20Balewadi.%20Please%20share%20the%20brochure%2C%20floor%20plans%20and%20pricing."
                 target="_blank"
                 rel="noreferrer"
                 className="w-full sm:w-auto px-5 py-3 rounded-full bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-400/50 text-emerald-300 font-semibold text-xs tracking-wider uppercase backdrop-blur-md transition-all flex items-center justify-center gap-2"

@@ -4,7 +4,6 @@ import { MessageSquare, X, Send, Sparkles, Building2, Calendar, FileText } from 
 export default function FloatingWhatsApp() {
   const [isOpen, setIsOpen] = useState(false);
   const phoneNumber = "917744009295";
-  const displayPhone = "+91 77440 09295";
 
   const sendQuickMessage = (message) => {
     const text = encodeURIComponent(message);
@@ -16,19 +15,19 @@ export default function FloatingWhatsApp() {
       title: "Request Floor Plans & Price Sheet",
       desc: "4.5 BHK & Sky Duplex CAD Plans",
       icon: <FileText className="w-4 h-4 text-emerald-400" />,
-      msg: "Hi Propsmart Realty, please share the detailed floor plans, CAD layout, and all-inclusive pricing for Kundan Arvaana, Balewadi."
+      msg: "Hello, I am interested in Kundan Arvaana, Balewadi. Please share the detailed floor plans, CAD layout, and all-inclusive pricing."
     },
     {
       title: "Book VIP Private Viewing",
       desc: "Chauffeured pickup or site tour",
       icon: <Calendar className="w-4 h-4 text-emerald-400" />,
-      msg: "Hi Propsmart Realty, I would like to schedule a private VIP site visit for Kundan Arvaana, Balewadi. Please let me know available slots."
+      msg: "Hello, I would like to schedule a private VIP viewing for Kundan Arvaana, Balewadi. Please let me know available slots."
     },
     {
-      title: "Speak with Senior Consultant",
+      title: "Speak with Project Advisor",
       desc: "Instant priority callback",
       icon: <Building2 className="w-4 h-4 text-emerald-400" />,
-      msg: "Hi Propsmart Realty, I have specific questions regarding Kundan Arvaana's 34th-floor amenities, MahaRERA PR1260002600277, and payment milestones. Please connect me with a senior advisor."
+      msg: "Hello, I am interested in Kundan Arvaana, Balewadi. Please connect me with a project advisor regarding Level 34 amenities, MahaRERA PR1260002600277, and payment milestones."
     }
   ];
 
@@ -47,10 +46,11 @@ export default function FloatingWhatsApp() {
               </div>
               <div>
                 <div className="font-serif text-sm font-bold text-white flex items-center gap-1.5">
-                  <span>Propsmart Realty Concierge</span>
+                  <span>Kundan Arvaana Desk</span>
                 </div>
-                <div className="text-[11px] text-emerald-300 font-mono">
-                  {displayPhone} • Online Now
+                <div className="text-[11px] text-emerald-300 font-medium flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>Official Project Desk • Online Now</span>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function FloatingWhatsApp() {
           {/* Body */}
           <div className="p-4 space-y-3 bg-obsidian-950/95">
             <div className="p-3 rounded-2xl bg-emerald-950/40 border border-emerald-500/20 text-xs text-champagne/90 leading-relaxed">
-              👋 <strong>Welcome to Kundan Arvaana!</strong> How can Propsmart Realty assist you today with Pune West's flagship Ikigai luxury landmark?
+              👋 <strong>Welcome to Kundan Arvaana!</strong> How can our project advisory team assist you today with Pune West's flagship Ikigai luxury landmark?
             </div>
 
             {/* Quick Action Pills */}
@@ -99,7 +99,7 @@ export default function FloatingWhatsApp() {
             {/* Direct Send Input Bar */}
             <div className="pt-2">
               <button
-                onClick={() => sendQuickMessage("Hi Propsmart Realty, I would like to enquire about Kundan Arvaana, Balewadi.")}
+                onClick={() => sendQuickMessage("Hello, I am interested in Kundan Arvaana, Balewadi. Please share project details, floor plans, and pricing.")}
                 className="w-full py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-obsidian-950 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition-all hover:scale-[1.02]"
               >
                 <MessageSquare className="w-4 h-4 text-obsidian-950" />
@@ -113,20 +113,20 @@ export default function FloatingWhatsApp() {
       {/* Primary Floating Trigger Pill */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex items-center gap-2.5 pl-3.5 pr-4 py-2.5 rounded-full bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-white shadow-2xl shadow-emerald-900/60 hover:shadow-emerald-500/40 border border-emerald-400/60 transition-all hover:scale-105"
+        className="group relative flex items-center gap-2.5 px-4 py-3 rounded-full bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 text-white shadow-2xl shadow-emerald-950/80 hover:shadow-emerald-500/40 border border-emerald-400/50 backdrop-blur-md transition-all duration-300 hover:scale-105"
         aria-label="Open WhatsApp Concierge"
       >
         <div className="relative">
           <MessageSquare className="w-5 h-5 text-white" />
-          <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-gold-400 rounded-full border-2 border-emerald-600 animate-ping"></span>
-          <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-gold-400 rounded-full border-2 border-emerald-600"></span>
+          <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-300 rounded-full border-2 border-emerald-700 animate-ping"></span>
+          <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-300 rounded-full border-2 border-emerald-700"></span>
         </div>
-        <div className="flex flex-col text-left">
-          <span className="text-[11px] font-bold tracking-wide uppercase leading-tight">
-            WhatsApp Enquiry
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-bold tracking-wider uppercase leading-none">
+            WhatsApp
           </span>
-          <span className="text-[9px] font-mono text-emerald-100/90 leading-tight">
-            {displayPhone}
+          <span className="px-1.5 py-0.5 rounded-full bg-black/25 text-[9px] font-medium text-emerald-100 uppercase tracking-widest border border-emerald-400/30">
+            Online
           </span>
         </div>
       </button>

@@ -70,7 +70,7 @@ export default function Navbar({ onOpenVisitModal }) {
           {/* Action CTA */}
           <div className="hidden md:flex items-center gap-2.5 shrink-0">
             <a
-              href="https://wa.me/917744009295?text=Hi%20Propsmart%20Realty%2C%20I%20am%20interested%20in%20Kundan%20Arvaana%20Balewadi."
+              href="https://wa.me/917744009295?text=Hello%2C%20I%20am%20interested%20in%20Kundan%20Arvaana%20Balewadi.%20Please%20share%20project%20details."
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-emerald-300 text-[11px] font-semibold tracking-wider hover:bg-emerald-500/20 transition-all shadow-sm"

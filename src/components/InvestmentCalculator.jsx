@@ -265,7 +265,7 @@ export default function InvestmentCalculator({ onOpenVisitModal, onOpenDossierMo
             {/* Action CTA */}
             <div className="pt-6 mt-6 border-t border-white/10 flex flex-col sm:flex-row gap-3">
               <a
-                href="https://wa.me/917744009295?text=Hi%20Propsmart%20Realty%2C%20please%20send%20the%20all-inclusive%20cost%20sheet%20and%20bank%20loan%20offers%20for%20Kundan%20Arvaana%20Balewadi%20to%20my%20WhatsApp."
+                href="https://wa.me/917744009295?text=Hello%2C%20I%20am%20interested%20in%20Kundan%20Arvaana%20Balewadi.%20Please%20send%20the%20all-inclusive%20cost%20sheet%20and%20payment%20milestones%20to%20my%20WhatsApp."
                 target="_blank"
                 rel="noreferrer"
                 className="flex-1 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-obsidian-950 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 text-center"

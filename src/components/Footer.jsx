@@ -1,6 +1,6 @@
 import React from 'react';
 import { PROJECT_INFO } from '../data/projectData';
-import { ShieldCheck, Phone, Mail, MapPin, ArrowUp, ExternalLink } from 'lucide-react';
+import { ShieldCheck, Phone, Mail, MapPin, ArrowUp, ExternalLink, MessageSquare } from 'lucide-react';
 import { SEO_ROUTES, navigateToRoute, getCleanUrl } from '../utils/seoRouter';
 
 export default function Footer({ onOpenVisitModal }) {
@@ -185,14 +185,15 @@ export default function Footer({ onOpenVisitModal }) {
                 <span>Near Sai Chowk, Balewadi, Pune West, Maharashtra 411045</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
+                <MessageSquare className="w-4 h-4 text-emerald-400 shrink-0" />
                 <a 
-                  href="https://wa.me/917744009295?text=Hi%20Propsmart%20Realty%2C%20I%20am%20interested%20in%20Kundan%20Arvaana%20Balewadi." 
+                  href="https://wa.me/917744009295?text=Hello%2C%20I%20am%20interested%20in%20Kundan%20Arvaana%20Balewadi.%20Please%20share%20project%20details." 
                   target="_blank" 
                   rel="noreferrer"
-                  className="hover:text-emerald-300 font-semibold transition-colors"
+                  className="hover:text-emerald-300 font-semibold transition-colors flex items-center gap-1.5"
                 >
-                  +91 77440 09295 (WhatsApp / Direct)
+                  <span>WhatsApp Project Desk</span>
+                  <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-normal">Online</span>
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
