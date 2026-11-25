@@ -32,7 +32,6 @@ Disallow: /api/
 Disallow: /wp-*
 Disallow: /admin
 Disallow: /.git
-Disallow: /*?*
 
 # ------------------------------------------------------------------------------
 # 2. MICROSOFT BING & YAHOO SEARCH
